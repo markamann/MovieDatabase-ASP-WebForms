@@ -1,0 +1,6 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="http://www.markamann.com/Demos/MovieDatabaseASPWF/" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^K:\\Projects\\2017\ Projects\\Source\\Private\\MovieDatabase-ASP-WebForms\\MovieDatabase_ASP_WebForms\\MovieDatabase_ASP_WebForms\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^K:\\Projects\\2017\ Projects\\Source\\Private\\MovieDatabase-ASP-WebForms\\MovieDatabase_ASP_WebForms\\MovieDatabase_ASP_WebForms\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

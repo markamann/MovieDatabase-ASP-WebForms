@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MovieDatabase_ASP_WebForms.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="CSS/Styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <span class="SiteTitle">Movie Database - ASP.NET WebForms Version</span>
+            <br />
+            <a href="Default.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">Home</span></a>
+            &tab;
+            <a href="MovieSearch.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">Movie Search</span></a>
+            &tab;
+            <a href="PeopleSearch.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">People Search</span></a>
+            &tab;
+            <a href="About.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">About</span></a>
+        </header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
