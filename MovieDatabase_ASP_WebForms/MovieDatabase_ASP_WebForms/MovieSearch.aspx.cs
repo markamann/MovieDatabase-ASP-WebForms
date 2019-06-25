@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace MovieDatabase_ASP_WebForms
 {
@@ -23,9 +23,10 @@ namespace MovieDatabase_ASP_WebForms
                 pnlResults.Visible = false;
 
                 Populate();
+                chkTitle_IncludeTVEpisodes.CheckedChanged += chkTitle_IncludeTVEpisodes_CheckedChanged;
             }
 
-
+           
         }
 
         protected void Populate()
@@ -37,22 +38,64 @@ namespace MovieDatabase_ASP_WebForms
 
         protected void PopulateDDLTitle()
         {
+            String SQL = String.Empty;
 
+            if (chkTitle_IncludeTVEpisodes.Checked)
+            {
+                SQL = "SELECT MovieID, Title FROM Movies ORDER BY Title";
+            }
+            else
+            {
+                SQL = "SELECT MovieID, Title FROM Movies WHERE [Type] <> 'TV Episode' ORDER BY Title";
+            }
+
+            SqlConnection _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+            SqlCommand _Cmd = new SqlCommand(SQL, _Cn);
+            DataTable _Table = new DataTable();
+            SqlDataAdapter _Adapter = new SqlDataAdapter(_Cmd);
+            _Adapter.Fill(_Table);
+            _Adapter.Dispose();
+            _Cmd.Dispose();
+
+            ddlTitle.Items.Clear();
+            ListItem li;
+
+            for (int x = 0; x < _Table.Rows.Count; ++x)
+            {
+                li = new ListItem(_Table.Rows[x]["Title"].ToString(), _Table.Rows[x]["MovieID"].ToString());
+                ddlTitle.Items.Add(li);
+            }
         }
 
         protected void PopulateDDLGenre()
         {
+            List<String> genres = Global.BLL_Genres.SelectDistinctGenres_list();
+            ddlGenre.Items.Clear();
+            ListItem li;
 
+            foreach (String g in genres)
+            {
+                li = new ListItem(g, g);
+                ddlGenre.Items.Add(li);
+            }
         }
 
         protected void PopulateDDLKeyword()
         {
+            List<DA.Models.MovieDatabase.KeywordList> kl = Global.BLL_KeywordList.SelectAll_list();
+            ddlKeyword.Items.Clear();
+            ListItem li;
 
+            foreach (DA.Models.MovieDatabase.KeywordList k in kl)
+            {
+                li = new ListItem(k.Keyword, k.KeywordID.ToString());
+                ddlKeyword.Items.Add(li);
+            }
         }
 
         protected void chkTitle_IncludeTVEpisodes_CheckedChanged(object sender, EventArgs e)
         {
-
+            PopulateDDLTitle();
         }
 
         protected void lbType_Click(object sender, EventArgs e)

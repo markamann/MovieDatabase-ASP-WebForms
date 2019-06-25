@@ -6,9 +6,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
 
     <asp:Panel runat="server" ID="pnSearchBy">
-        <asp:Label runat="server" ID="lblSearchBy" Font-Bold="true" Text="SearchBy"></asp:Label>
+        <br /><br />
+        <asp:Label runat="server" ID="lblSearchBy" Font-Bold="true" Text="Search by:"></asp:Label>
         <br />
-        <div id="searchby" style="float: left; width: 100%; text-align: center;">
+        <div id="searchby" style="float: left; width: 100%; text-align: left;">
             <asp:LinkButton runat="server" ID="lbType" Text="Type" OnClick="lbType_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:LinkButton runat="server" ID="lbTitle" Text="Title" OnClick="lbTitle_Click" />
@@ -22,6 +23,7 @@
     </asp:Panel>
     <br />
     <asp:Panel runat="server" ID="pnlType">
+        <br /><br />
         <div id="divType" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Type" Font-Bold="true" Text="Type:" />
             &nbsp;
@@ -38,8 +40,9 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlTitle">
+        <br /><br />
         <div id="divTitle" style="width: 100%; margin: 10px;">
-            <asp:CheckBox runat="server" ID="chkTitle_IncludeTVEpisodes" Text="Include TV Episodes?" OnCheckedChanged="chkTitle_IncludeTVEpisodes_CheckedChanged" />
+            <asp:CheckBox runat="server" ID="chkTitle_IncludeTVEpisodes" Text="Include TV Episodes?" OnCheckedChanged="chkTitle_IncludeTVEpisodes_CheckedChanged" AutoPostBack="true" />
             <br />
             <asp:Label runat="server" ID="lblSearchBy_Title" Font-Bold="true" Text="Title:" />
             &nbsp;
@@ -49,6 +52,7 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlGenre">
+        <br /><br />
         <div id="divGenre" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Genre" Font-Bold="true" Text="Genre:" />
             &nbsp;
@@ -58,6 +62,7 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlKeyword">
+        <br /><br />
         <div id="divKeyword" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Keyword" Font-Bold="true" Text="Keyword:" />
             &nbsp;
@@ -67,6 +72,7 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlIMDBID">
+        <br /><br />
         <div id="divIMDBID" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_IMDBID" Font-Bold="true" Text="IMDB ID:" />
             &nbsp;
@@ -78,8 +84,6 @@
         </div>
     </asp:Panel>
     <br /><br />
-
-
     <asp:Panel runat="server" ID="pnlResults">
 
     </asp:Panel>
