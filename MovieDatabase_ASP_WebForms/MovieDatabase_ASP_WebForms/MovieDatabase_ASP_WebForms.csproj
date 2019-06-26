@@ -126,6 +126,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="MovieDetail.aspx" />
     <Content Include="MovieSearch.aspx" />
     <Content Include="PeopleSearch.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -180,6 +181,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDetail.aspx.cs">
+      <DependentUpon>MovieDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieDetail.aspx.designer.cs">
+      <DependentUpon>MovieDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="MovieSearch.aspx.cs">
       <DependentUpon>MovieSearch.aspx</DependentUpon>

@@ -4,9 +4,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
+    <h2>Movie Search</h2>
     <asp:Panel runat="server" ID="pnSearchBy">
-        <br /><br />
         <asp:Label runat="server" ID="lblSearchBy" Font-Bold="true" Text="Search by:"></asp:Label>
         <br />
         <div id="searchby" style="float: left; width: 100%; text-align: left;">
@@ -23,7 +22,6 @@
     </asp:Panel>
     <br />
     <asp:Panel runat="server" ID="pnlType">
-        <br /><br />
         <div id="divType" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Type" Font-Bold="true" Text="Type:" />
             &nbsp;
@@ -40,7 +38,6 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlTitle">
-        <br /><br />
         <div id="divTitle" style="width: 100%; margin: 10px;">
             <asp:CheckBox runat="server" ID="chkTitle_IncludeTVEpisodes" Text="Include TV Episodes?" OnCheckedChanged="chkTitle_IncludeTVEpisodes_CheckedChanged" AutoPostBack="true" />
             <br />
@@ -52,7 +49,6 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlGenre">
-        <br /><br />
         <div id="divGenre" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Genre" Font-Bold="true" Text="Genre:" />
             &nbsp;
@@ -62,7 +58,6 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlKeyword">
-        <br /><br />
         <div id="divKeyword" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Keyword" Font-Bold="true" Text="Keyword:" />
             &nbsp;
@@ -72,7 +67,6 @@
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlIMDBID">
-        <br /><br />
         <div id="divIMDBID" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_IMDBID" Font-Bold="true" Text="IMDB ID:" />
             &nbsp;
@@ -85,7 +79,20 @@
     </asp:Panel>
     <br /><br />
     <asp:Panel runat="server" ID="pnlResults">
-
+        <div id="divResults" style="width: 100%; text-align: center;">
+            <asp:Label runat="server" ID="lblRecordsReturned" Font-Bold="false" />
+             <asp:GridView ID="gvResults" runat="server" AutoGenerateColumns="false" AllowPaging="true" PageSize="20" OnRowCommand="gvResults_RowCommand" Width="80%">
+                 <Columns>
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                        <ItemTemplate>
+                            <asp:LinkButton ID = "lblView" runat = "server" Text = "View" CommandName = "View" CommandArgument = '<% #Eval("MovieID") %>' OnClientClick="aspnetForm.target ='_blank';"></asp:LinkButton >
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                     <asp:BoundField DataField="Title" HeaderText="Title" ControlStyle-Width="500px" />
+                     <asp:BoundField DataField="Type" HeaderText="Type" ControlStyle-Width="200px" />
+                     <asp:BoundField DataField="Year" HeaderText="Year" ControlStyle-Width="200px" />
+                 </Columns>
+             </asp:GridView>
+        </div>
     </asp:Panel>
-
 </asp:Content>

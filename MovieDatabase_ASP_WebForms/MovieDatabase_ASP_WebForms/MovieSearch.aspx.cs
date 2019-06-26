@@ -9,6 +9,12 @@ namespace MovieDatabase_ASP_WebForms
 {
     public partial class MovieSearch : System.Web.UI.Page
     {
+
+        private SqlConnection _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+        private SqlCommand _Cmd = null;
+        private DataTable _Table = null;
+        private SqlDataAdapter _Adapter = null;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -49,10 +55,10 @@ namespace MovieDatabase_ASP_WebForms
                 SQL = "SELECT MovieID, Title FROM Movies WHERE [Type] <> 'TV Episode' ORDER BY Title";
             }
 
-            SqlConnection _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-            SqlCommand _Cmd = new SqlCommand(SQL, _Cn);
-            DataTable _Table = new DataTable();
-            SqlDataAdapter _Adapter = new SqlDataAdapter(_Cmd);
+            _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+            _Cmd = new SqlCommand(SQL, _Cn);
+            _Table = new DataTable();
+            _Adapter = new SqlDataAdapter(_Cmd);
             _Adapter.Fill(_Table);
             _Adapter.Dispose();
             _Cmd.Dispose();
@@ -145,6 +151,44 @@ namespace MovieDatabase_ASP_WebForms
 
         protected void btnSearchByType_Click(object sender, EventArgs e)
         {
+            if (ddlType.SelectedItem != null)
+            {
+                String SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE [Type] = '" + ddlType.SelectedItem.ToString() + "' ORDER BY Title";
+                _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+                _Cmd = new SqlCommand(SQL, _Cn);
+                _Table = new DataTable();
+                _Adapter = new SqlDataAdapter(_Cmd);
+                _Adapter.Fill(_Table);
+                _Adapter.Dispose();
+                _Cmd.Dispose();
+
+                if (_Table != null)
+                {
+                    if (_Table.Rows.Count > 0)
+                    {
+                        gvResults.DataSource = _Table;
+                        gvResults.DataBind();
+                        pnlResults.Visible = true;
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
+        }
+
+        protected void gvResults_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "View")
+            {
+                String MovieID = e.CommandArgument.ToString();
+
+                this.Session["MovieID"] = MovieID;
+                this.Session["ReferringPage"] = "MovieSearch.aspx";
+
+                Response.Redirect("MovieDetail.aspx");
+            }
 
         }
 

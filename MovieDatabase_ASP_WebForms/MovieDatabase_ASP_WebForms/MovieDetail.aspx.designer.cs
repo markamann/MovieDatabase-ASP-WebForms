@@ -10,294 +10,294 @@
 namespace MovieDatabase_ASP_WebForms {
     
     
-    public partial class MovieSearch {
+    public partial class MovieDetail {
         
         /// <summary>
-        /// pnSearchBy control.
+        /// lblTitle_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnSearchBy;
+        protected global::System.Web.UI.WebControls.Label lblTitle_Label;
         
         /// <summary>
-        /// lblSearchBy control.
+        /// lblTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy;
+        protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
-        /// lbType control.
+        /// lblOriginalTitle_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbType;
+        protected global::System.Web.UI.WebControls.Label lblOriginalTitle_Label;
         
         /// <summary>
-        /// lbTitle control.
+        /// lblOriginalTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbTitle;
+        protected global::System.Web.UI.WebControls.Label lblOriginalTitle;
         
         /// <summary>
-        /// lbGenre control.
+        /// lblIMDBID_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbGenre;
+        protected global::System.Web.UI.WebControls.Label lblIMDBID_Label;
         
         /// <summary>
-        /// lbKeyword control.
+        /// lblIMDBID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbKeyword;
+        protected global::System.Web.UI.WebControls.Label lblIMDBID;
         
         /// <summary>
-        /// lbIMDBID control.
+        /// lblType_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbIMDBID;
+        protected global::System.Web.UI.WebControls.Label lblType_Label;
         
         /// <summary>
-        /// pnlType control.
+        /// lblType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlType;
+        protected global::System.Web.UI.WebControls.Label lblType;
         
         /// <summary>
-        /// lblSearchBy_Type control.
+        /// lblMPAARating_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Type;
+        protected global::System.Web.UI.WebControls.Label lblMPAARating_Label;
         
         /// <summary>
-        /// ddlType control.
+        /// lblMPAARating control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlType;
+        protected global::System.Web.UI.WebControls.Label lblMPAARating;
         
         /// <summary>
-        /// btnSearchByType control.
+        /// lblReleaseDate_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByType;
+        protected global::System.Web.UI.WebControls.Label lblReleaseDate_Label;
         
         /// <summary>
-        /// pnlTitle control.
+        /// lblReleaseDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlTitle;
+        protected global::System.Web.UI.WebControls.Label lblReleaseDate;
         
         /// <summary>
-        /// chkTitle_IncludeTVEpisodes control.
+        /// lblYearl_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkTitle_IncludeTVEpisodes;
+        protected global::System.Web.UI.WebControls.Label lblYearl_Label;
         
         /// <summary>
-        /// lblSearchBy_Title control.
+        /// lblYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Title;
+        protected global::System.Web.UI.WebControls.Label lblYear;
         
         /// <summary>
-        /// ddlTitle control.
+        /// lblRuntime_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTitle;
+        protected global::System.Web.UI.WebControls.Label lblRuntime_Label;
         
         /// <summary>
-        /// btnSearchByTitle control.
+        /// lblRuntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByTitle;
+        protected global::System.Web.UI.WebControls.Label lblRuntime;
         
         /// <summary>
-        /// pnlGenre control.
+        /// lblRating_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlGenre;
+        protected global::System.Web.UI.WebControls.Label lblRating_Label;
         
         /// <summary>
-        /// lblSearchBy_Genre control.
+        /// lblRating control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Genre;
+        protected global::System.Web.UI.WebControls.Label lblRating;
         
         /// <summary>
-        /// ddlGenre control.
+        /// lblMetascore_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGenre;
+        protected global::System.Web.UI.WebControls.Label lblMetascore_Label;
         
         /// <summary>
-        /// btnSearchByGenre control.
+        /// lblMetascore control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByGenre;
+        protected global::System.Web.UI.WebControls.Label lblMetascore;
         
         /// <summary>
-        /// pnlKeyword control.
+        /// lblVotes_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlKeyword;
+        protected global::System.Web.UI.WebControls.Label lblVotes_Label;
         
         /// <summary>
-        /// lblSearchBy_Keyword control.
+        /// lblVotes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Keyword;
+        protected global::System.Web.UI.WebControls.Label lblVotes;
         
         /// <summary>
-        /// ddlKeyword control.
+        /// lblSeriesIMDBID_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlKeyword;
+        protected global::System.Web.UI.WebControls.Label lblSeriesIMDBID_Label;
         
         /// <summary>
-        /// btnSearchByKeyword control.
+        /// lbSeriesIMDBID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByKeyword;
+        protected global::System.Web.UI.WebControls.LinkButton lbSeriesIMDBID;
         
         /// <summary>
-        /// pnlIMDBID control.
+        /// lblSeriesName_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIMDBID;
+        protected global::System.Web.UI.WebControls.Label lblSeriesName_Label;
         
         /// <summary>
-        /// lblSearchBy_IMDBID control.
+        /// lblSeriesName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_IMDBID;
+        protected global::System.Web.UI.WebControls.Label lblSeriesName;
         
         /// <summary>
-        /// txtSearchBy_IMDBID control.
+        /// lblIIMDBURL_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchBy_IMDBID;
+        protected global::System.Web.UI.WebControls.Label lblIIMDBURL_Label;
         
         /// <summary>
-        /// btnSearchByIMDBID control.
+        /// linklIMDBURL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByIMDBID;
+        protected global::System.Web.UI.WebControls.HyperLink linklIMDBURL;
         
         /// <summary>
-        /// lblSearchByIMDBID_Error control.
+        /// lblSimplePlot_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchByIMDBID_Error;
+        protected global::System.Web.UI.WebControls.Label lblSimplePlot_Label;
         
         /// <summary>
-        /// pnlResults control.
+        /// lblSimplePlot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlResults;
+        protected global::System.Web.UI.WebControls.Label lblSimplePlot;
         
         /// <summary>
-        /// lblRecordsReturned control.
+        /// lblPlot_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRecordsReturned;
+        protected global::System.Web.UI.WebControls.Label lblPlot_Label;
         
         /// <summary>
-        /// gvResults control.
+        /// lblPlot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvResults;
+        protected global::System.Web.UI.WebControls.Label lblPlot;
     }
 }
