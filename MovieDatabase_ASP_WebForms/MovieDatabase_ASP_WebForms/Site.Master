@@ -20,6 +20,8 @@
             &tab;
             <a href="PeopleSearch.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">People Search</span></a>
             &tab;
+            <a href="MovieQueue.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">Movie Queue</span></a>
+            &tab;
             <a href="About.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">About</span></a>
         </header>
 

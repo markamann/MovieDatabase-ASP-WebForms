@@ -14,6 +14,7 @@ namespace MovieDatabase_ASP_WebForms
         private SqlCommand _Cmd = null;
         private DataTable _Table = null;
         private SqlDataAdapter _Adapter = null;
+        private String SQL = String.Empty;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -44,8 +45,6 @@ namespace MovieDatabase_ASP_WebForms
 
         protected void PopulateDDLTitle()
         {
-            String SQL = String.Empty;
-
             if (chkTitle_IncludeTVEpisodes.Checked)
             {
                 SQL = "SELECT MovieID, Title FROM Movies ORDER BY Title";
@@ -153,7 +152,7 @@ namespace MovieDatabase_ASP_WebForms
         {
             if (ddlType.SelectedItem != null)
             {
-                String SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE [Type] = '" + ddlType.SelectedItem.ToString() + "' ORDER BY Title";
+                SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE [Type] = '" + ddlType.SelectedItem.ToString() + "' ORDER BY Title";
                 _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
                 _Cmd = new SqlCommand(SQL, _Cn);
                 _Table = new DataTable();
@@ -189,7 +188,6 @@ namespace MovieDatabase_ASP_WebForms
 
                 Response.Redirect("MovieDetail.aspx");
             }
-
         }
 
         protected void btnSearchByTitle_Click(object sender, EventArgs e)

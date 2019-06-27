@@ -23,6 +23,7 @@ namespace MovieDatabase_ASP_WebForms
         public static DA.BLL.MovieDatabase.Genres BLL_Genres = new DA.BLL.MovieDatabase.Genres(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         public static DA.BLL.MovieDatabase.KeywordList BLL_KeywordList = new DA.BLL.MovieDatabase.KeywordList(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         public static DA.BLL.MovieDatabase.Movies BLL_Movies = new DA.BLL.MovieDatabase.Movies(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+        public static DA.BLL.MovieDatabase.CastMembers BLL_CastMembers = new DA.BLL.MovieDatabase.CastMembers(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
 
 
         //public static DA.BLL.MovieDatabase.APIRequests BLL_APIRequests = new DA.BLL.MovieDatabase.APIRequests(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
@@ -36,7 +37,6 @@ namespace MovieDatabase_ASP_WebForms
         //public static DA.BLL.MovieDatabase.MovieQueue_Errors BLL_MovieQueue_Errors = new DA.BLL.MovieDatabase.MovieQueue_Errors(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.AKAs BLL_AKAs = new DA.BLL.MovieDatabase.AKAs(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.BusinessData BLL_BusinessData = new DA.BLL.MovieDatabase.BusinessData(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-        //public static DA.BLL.MovieDatabase.CastMembers BLL_CastMembers = new DA.BLL.MovieDatabase.CastMembers(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.Countries BLL_Countries = new DA.BLL.MovieDatabase.Countries(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.Directors BLL_Directors = new DA.BLL.MovieDatabase.Directors(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.FilmingLocations BLL_FilmingLocations = new DA.BLL.MovieDatabase.FilmingLocations(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);

@@ -81,7 +81,13 @@
     <asp:Panel runat="server" ID="pnlResults">
         <div id="divResults" style="width: 100%; text-align: center;">
             <asp:Label runat="server" ID="lblRecordsReturned" Font-Bold="false" />
-             <asp:GridView ID="gvResults" runat="server" AutoGenerateColumns="false" AllowPaging="true" PageSize="20" OnRowCommand="gvResults_RowCommand" Width="80%">
+             <asp:GridView
+                 ID="gvResults"
+                 runat="server"
+                 AutoGenerateColumns="false"
+                 PageSize="20"
+                 OnRowCommand="gvResults_RowCommand"
+                 Width="100%">
                  <Columns>
                     <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
                         <ItemTemplate>
@@ -89,10 +95,12 @@
                         </ItemTemplate>
                     </asp:TemplateField>
                      <asp:BoundField DataField="Title" HeaderText="Title" ControlStyle-Width="500px" />
-                     <asp:BoundField DataField="Type" HeaderText="Type" ControlStyle-Width="200px" />
-                     <asp:BoundField DataField="Year" HeaderText="Year" ControlStyle-Width="200px" />
+                     <asp:BoundField DataField="Type" HeaderText="Type" ControlStyle-Width="300px" />
+                     <asp:BoundField DataField="Year" HeaderText="Year" ControlStyle-Width="300px" />
                  </Columns>
              </asp:GridView>
         </div>
     </asp:Panel>
+
+    <asp:SqlDataSource ID="SqlDataSource_Results" runat="server"></asp:SqlDataSource>
 </asp:Content>
