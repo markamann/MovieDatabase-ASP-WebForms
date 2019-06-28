@@ -8,7 +8,7 @@
         <h2>Movie Search</h2>
         <div id="divBaseBlock" style="float:left; width: 1400px; text-align: center; vertical-align: top;">
             <div id="divMoviePoster" style="float:left; width: 200px; height: 200px; text-align: center; vertical-align: middle;">
-                <img src="http://www.mjafileserver.com/MovieDatabase/Photos/MoviePosters/American_Pie_(1999)_1.jpg" height="200" alt="American Pie - Poster" />
+                <asp:Image runat="server" ID="imgMoviePoster" Height="200px" />
             </div>
             <div id="divBaseDataBlock" style="float:left; width: 1200px; height: 30px; text-align: left; vertical-align: top;">
                 <div id="divTitle" style="float:left; width: 1200px; height: 30px; text-align: left; vertical-align: middle;">
@@ -202,54 +202,190 @@
                 </Columns>
              </asp:GridView>
         </div>
-
-
-
-
-
-
-
-
-
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divMovieTrivia" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblMovieTrivia_Label" Font-Bold="true" Text="Movie Trivia:" />
+            <br />
+             <asp:GridView ID="gvMovieTrivia" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="Trivia" HeaderText="Trivia" ControlStyle-Width="1400px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divGoofs" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblGoofs_Label" Font-Bold="true" Text="Goofs:" />
+            <br />
+             <asp:GridView ID="gvGoofs" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="Type" HeaderText="Goof Type" ControlStyle-Width="400px" />
+                     <asp:BoundField DataField="GoofText" HeaderText="Text" ControlStyle-Width="1000px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divMovieQuotes" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblMovieQuotes" Font-Bold="true" Text="Quotes:" />
+            <br />
+            <asp:Table runat="server" ID="tblMovieQuotes" Width="100%" />
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divCountries" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblCountries_Label" Font-Bold="true" Text="Countries:" />
+            <br />
+             <asp:GridView ID="gvCountries" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="CountryName" HeaderText="Country" ControlStyle-Width="1400px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divFilmingLocations" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblFilmingLocations_Label" Font-Bold="true" Text="Filming Locations:" />
+            <br />
+             <asp:GridView ID="gvFilmingLocations" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="Location" HeaderText="Location" ControlStyle-Width="600px" />
+                     <asp:BoundField DataField="Remarks" HeaderText="Remarks" ControlStyle-Width="800px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divLanguages" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblLanguages_Label" Font-Bold="true" Text="Languages:" />
+            <br />
+             <asp:GridView ID="gvLanguages" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="LanguageName" HeaderText="Language" ControlStyle-Width="1400px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divAKAs" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblAKAs_Label" Font-Bold="true" Text="AKAs:" />
+            <br />
+             <asp:GridView ID="gvAKAs" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="Country" HeaderText="Country" ControlStyle-Width="300px" />
+                     <asp:BoundField DataField="Title" HeaderText="Title" ControlStyle-Width="500px" />
+                     <asp:BoundField DataField="Comment" HeaderText="Comment" ControlStyle-Width="600px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divSimilarMovies" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblSimilarMovies_Label" Font-Bold="true" Text="Similar Movies:" />
+            <br />
+             <asp:GridView ID="gvSimilarMovies" runat="server" AutoGenerateColumns="false" Width="100%">
+                 <Columns>
+                     <asp:BoundField DataField="IMDBID" HeaderText="IMDBID" ControlStyle-Width="200px" />
+                     <asp:BoundField DataField="MovieName" HeaderText="Title" ControlStyle-Width="1200px" />
+                </Columns>
+             </asp:GridView>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divBusinessData" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblBusinessData_Label" Font-Bold="true" Text="Business Data:" />
+            <br />
+            <div id="divBudget" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblBudget_Label" Font-Bold="true" Text="Budget:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblBudget" Font-Bold="false" />
+            </div>
+            <div id="divOpeningWeekend" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblOpeningWeekend_Label" Font-Bold="true" Text="Opening Weekend:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblOpeningWeekend" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divGrossUSA" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblGrossUSA_Label" Font-Bold="true" Text="Gross USA:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblGrossUSA" Font-Bold="false" />
+            </div>
+            <div id="divWorldwide" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblWorldwide_Label" Font-Bold="true" Text="Worldwide:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblWorldwide" Font-Bold="false" />
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divTechnicalData" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblTechnicalData_Label" Font-Bold="true" Text="Technical Data:" />
+            <br />
+            <div id="divRuntime" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblTechnicalData_Runtime_Label" Font-Bold="true" Text="Runtime:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblTechnicalData_Runtime" Font-Bold="false" />
+            </div>
+            <div id="divSoundMix" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblSoundMix_Label" Font-Bold="true" Text="Sound Mix:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblSoundMix" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divColor" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblColor_Label" Font-Bold="true" Text="Color:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblColor" Font-Bold="false" />
+            </div>
+            <div id="divAspectRatio" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblAspectRatio_Label" Font-Bold="true" Text="Aspect Ratio:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblAspectRatio" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divCamera" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblCamera_Label" Font-Bold="true" Text="Camera:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblCamera" Font-Bold="false" />
+            </div>
+            <div id="divLaboratory" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblLaboratory_Label" Font-Bold="true" Text="Laboratory:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblLaboratory" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divFilmLength" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblFilmLength_Label" Font-Bold="true" Text="Film Length:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblFilmLength" Font-Bold="false" />
+            </div>
+            <div id="divNegativeFormat" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblNegativeFormat_Label" Font-Bold="true" Text="Negative Format:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblNegativeFormat" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divCinematographicProcess" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblCinematographicProcess_Label" Font-Bold="true" Text="Cinematographic Process:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblCinematographicProcess" Font-Bold="false" />
+            </div>
+            <div id="divPrintedFilmFormat" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
+                <asp:Label runat="server" ID="lblPrintedFilmFormat_Label" Font-Bold="true" Text="Printed Film Format:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblPrintedFilmFormat" Font-Bold="false" />
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divKeywords" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
+            <asp:Label runat="server" ID="lblKeywords_Label" Font-Bold="true" Text="Keywords:" />
+            <br />
+            <asp:Label runat="server" ID="lblKeywords" Font-Bold="false" Width="1400px" />
+        </div>
     </div>
-
-
-<!--
-        [Display(Name = "Genres")]
-        public List<Genre> Genres { get; set; }
-
-        [Display(Name = "Movie Trivia")]
-        public List<MovieTrivia> Trivia { get; set; }
-
-        [Display(Name = "Goofs")]
-        public List<Goof> Goofs { get; set; }
-
-        [Display(Name = "Countries")]
-        public List<Country> Countries { get; set; }
-
-        [Display(Name = "Filming Locations")]
-        public List<FilmingLocation> FilmingLocations { get; set; }
-
-        [Display(Name = "Languages")]
-        public List<Language> Languages { get; set; }
-
-        [Display(Name = "AKA")]
-        public List<AKA> AKA { get; set; }
-
-        [Display(Name = "Business Data")]
-        public Business BusinessData { get; set; }
-
-        [Display(Name = "Technical Data")]
-        public Technical TechnicalData { get; set; }
-
-        [Display(Name = "Similar Movies")]
-        public List<SimilarMovie> SimilarMovies { get; set; }
-
-        [Display(Name = "Movie Quotes")]
-        public List<MovieQuote> MovieQuotes { get; set; }
-
-        [Display(Name = "Keywords")]
-        public List<Keyword> Keywords { get; set; }
--->
-
+    <br /><br /><br /><br />
+    <asp:Label runat="server" ID="lblPlaceholder" Font-Bold="false" Width="1400px" Text="" />
 </asp:Content>

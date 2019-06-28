@@ -25,7 +25,7 @@
         <div id="divType" style="width: 100%; margin: 10px;">
             <asp:Label runat="server" ID="lblSearchBy_Type" Font-Bold="true" Text="Type:" />
             &nbsp;
-            <asp:DropDownList runat="server" ID="ddlType">
+            <asp:DropDownList runat="server" ID="ddlType" Font-Size="18pt">
                 <asp:ListItem Text="All" Value="All" Selected="True" />
                 <asp:ListItem Text="All Movies" Value="All Movies" />
                 <asp:ListItem Text="Movie" Value="Movie" />
@@ -34,7 +34,7 @@
                 <asp:ListItem Text="TV Episode" Value="TV Episode" />
             </asp:DropDownList>
             &nbsp;
-            <asp:Button ID="btnSearchByType" runat="server" BackColor="#000000" Font-Bold="True" ForeColor="Lime" Text="Search" OnClick="btnSearchByType_Click" />
+            <asp:Button ID="btnSearchByType" runat="server" BackColor="#000000" Font-Bold="True" ForeColor="Lime" Text="Search" OnClick="btnSearchByType_Click" Font-Size="18pt" />
         </div>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlTitle">
@@ -101,6 +101,5 @@
              </asp:GridView>
         </div>
     </asp:Panel>
-
-    <asp:SqlDataSource ID="SqlDataSource_Results" runat="server"></asp:SqlDataSource>
+    <br /><br /><br /><br />
 </asp:Content>

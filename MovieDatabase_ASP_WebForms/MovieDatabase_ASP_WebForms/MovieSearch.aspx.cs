@@ -54,13 +54,17 @@ namespace MovieDatabase_ASP_WebForms
                 SQL = "SELECT MovieID, Title FROM Movies WHERE [Type] <> 'TV Episode' ORDER BY Title";
             }
 
-            _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-            _Cmd = new SqlCommand(SQL, _Cn);
-            _Table = new DataTable();
-            _Adapter = new SqlDataAdapter(_Cmd);
-            _Adapter.Fill(_Table);
-            _Adapter.Dispose();
-            _Cmd.Dispose();
+            using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+            {
+                using (SqlCommand cmd = new SqlCommand(SQL, con))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        _Table = new DataTable();
+                        adapter.Fill(_Table);
+                    }
+                }
+            }
 
             ddlTitle.Items.Clear();
             ListItem li;
@@ -153,13 +157,26 @@ namespace MovieDatabase_ASP_WebForms
             if (ddlType.SelectedItem != null)
             {
                 SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE [Type] = '" + ddlType.SelectedItem.ToString() + "' ORDER BY Title";
-                _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-                _Cmd = new SqlCommand(SQL, _Cn);
-                _Table = new DataTable();
-                _Adapter = new SqlDataAdapter(_Cmd);
-                _Adapter.Fill(_Table);
-                _Adapter.Dispose();
-                _Cmd.Dispose();
+                using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                {
+                    using (SqlCommand cmd = new SqlCommand(SQL, con))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            _Table = new DataTable();
+                            adapter.Fill(_Table);
+                        }
+                    }
+                }
+
+
+                //_Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+                //_Cmd = new SqlCommand(SQL, _Cn);
+                //_Table = new DataTable();
+                //_Adapter = new SqlDataAdapter(_Cmd);
+                //_Adapter.Fill(_Table);
+                //_Adapter.Dispose();
+                //_Cmd.Dispose();
 
                 if (_Table != null)
                 {
