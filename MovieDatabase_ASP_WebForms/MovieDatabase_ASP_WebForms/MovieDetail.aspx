@@ -126,7 +126,7 @@
                  </Columns>
              </asp:GridView>
             <br />
-            <asp:Hyperlink runat="server" ID="linkSeeFullCast" Text="See Full Cast" NavigateUrl="FullCast.aspx" />
+            <asp:Hyperlink runat="server" ID="linkSeeFullCast" Text="See Full Cast" NavigateUrl="FullCast.aspx" Target="_blank" />
         </div>
         <div style="clear: both;"></div>
         <br />
