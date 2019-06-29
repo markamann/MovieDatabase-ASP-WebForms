@@ -15,13 +15,13 @@
             <span class="SiteTitle">Movie Database - ASP.NET WebForms Version</span>
             <br />
             <a href="Default.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">Home</span></a>
-            &tab;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="MovieSearch.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">Movie Search</span></a>
-            &tab;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="PeopleSearch.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">People Search</span></a>
-            &tab;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="MovieQueue.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">Movie Queue</span></a>
-            &tab;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="About.aspx" style="outline: none !important; text-decoration:none !important;"><span class="LinkSpan">About</span></a>
         </header>
 

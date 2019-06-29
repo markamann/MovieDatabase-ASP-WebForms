@@ -85,7 +85,6 @@
                  ID="gvResults"
                  runat="server"
                  AutoGenerateColumns="false"
-                 PageSize="20"
                  OnRowCommand="gvResults_RowCommand"
                  Width="100%">
                  <Columns>

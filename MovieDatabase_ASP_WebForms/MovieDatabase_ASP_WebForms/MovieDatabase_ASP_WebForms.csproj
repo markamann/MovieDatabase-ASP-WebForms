@@ -131,6 +131,7 @@
     <Content Include="MovieQueue.aspx" />
     <Content Include="MovieSearch.aspx" />
     <Content Include="PeopleSearch.aspx" />
+    <Content Include="PersonDetail.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -218,6 +219,13 @@
     </Compile>
     <Compile Include="PeopleSearch.aspx.designer.cs">
       <DependentUpon>PeopleSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonDetail.aspx.cs">
+      <DependentUpon>PersonDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonDetail.aspx.designer.cs">
+      <DependentUpon>PersonDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
