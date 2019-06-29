@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Linq;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+
 namespace MovieDatabase_ASP_WebForms
 {
     public partial class MovieDetail : System.Web.UI.Page
     {
-
-        //private SqlConnection _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-        //private SqlCommand _Cmd = null;
-        //private SqlDataAdapter _Adapter = null;
         private String SQL = String.Empty;
         private DataTable _Table = null;
         private DataTable _Quotes = null;
@@ -644,9 +640,6 @@ namespace MovieDatabase_ASP_WebForms
             DateTime newdate = new DateTime(Int32.Parse(year), Int32.Parse(month), Int32.Parse(day));
             return newdate.ToLongDateString();
         }
-
-
-
 
     }
 }

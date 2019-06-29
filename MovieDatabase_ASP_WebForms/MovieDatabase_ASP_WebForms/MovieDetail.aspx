@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div id="divMainContainer" class="MainContainer">
-        <h2>Movie Search</h2>
+        <h2>Movie Detail</h2>
         <div id="divBaseBlock" class="BaseBlock">
             <div id="divMoviePoster" class="Photo">
                 <asp:Image runat="server" ID="imgMoviePoster" Height="200px" />
