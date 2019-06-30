@@ -594,13 +594,12 @@ namespace MovieDatabase_ASP_WebForms
         {
             if (e.CommandName == "View")
             {
-                // TODO
-                String MovieID = e.CommandArgument.ToString();
+                String PersonID = e.CommandArgument.ToString();
 
-                this.Session["MovieID"] = MovieID;
-                this.Session["ReferringPage"] = "MovieSearch.aspx";
+                this.Session["PersonID"] = PersonID;
+                this.Session["ReferringPage"] = "MovieDetail.aspx";
 
-                Response.Redirect("MovieDetail.aspx");
+                Response.Redirect("PersonDetail.aspx");
             }
         }
 
@@ -608,8 +607,12 @@ namespace MovieDatabase_ASP_WebForms
         {
             if (e.CommandName == "View")
             {
-                // TODO
+                String PersonID = e.CommandArgument.ToString();
 
+                this.Session["PersonID"] = PersonID;
+                this.Session["ReferringPage"] = "MovieDetail.aspx";
+
+                Response.Redirect("PersonDetail.aspx");
             }
         }
 
@@ -617,8 +620,12 @@ namespace MovieDatabase_ASP_WebForms
         {
             if (e.CommandName == "View")
             {
-                // TODO
+                String PersonID = e.CommandArgument.ToString();
 
+                this.Session["PersonID"] = PersonID;
+                this.Session["ReferringPage"] = "MovieDetail.aspx";
+
+                Response.Redirect("PersonDetail.aspx");
             }
         }
 
@@ -626,11 +633,14 @@ namespace MovieDatabase_ASP_WebForms
         {
             if (e.CommandName == "View")
             {
-                // TODO
+                String MovieID = e.CommandArgument.ToString();
 
+                this.Session["MovieID"] = MovieID;
+                this.Session["ReferringPage"] = "MovieDetail.aspx";
+
+                Response.Redirect("MovieDetail.aspx");
             }
         }
-
 
         private String ConvertDate(String originaldate)
         {

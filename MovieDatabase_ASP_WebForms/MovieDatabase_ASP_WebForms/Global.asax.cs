@@ -24,6 +24,7 @@ namespace MovieDatabase_ASP_WebForms
         public static DA.BLL.MovieDatabase.KeywordList BLL_KeywordList = new DA.BLL.MovieDatabase.KeywordList(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         public static DA.BLL.MovieDatabase.Movies BLL_Movies = new DA.BLL.MovieDatabase.Movies(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         public static DA.BLL.MovieDatabase.CastMembers BLL_CastMembers = new DA.BLL.MovieDatabase.CastMembers(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
+        public static DA.BLL.MovieDatabase.People BLL_People = new DA.BLL.MovieDatabase.People(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
 
 
         //public static DA.BLL.MovieDatabase.APIRequests BLL_APIRequests = new DA.BLL.MovieDatabase.APIRequests(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
@@ -31,7 +32,6 @@ namespace MovieDatabase_ASP_WebForms
         //public static DA.BLL.MovieDatabase.name_basics BLL_name_basics = new DA.BLL.MovieDatabase.name_basics(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.MovieQueue BLL_MovieQueue = new DA.BLL.MovieDatabase.MovieQueue(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.TempMovie BLL_TempMovie = new DA.BLL.MovieDatabase.TempMovie(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-        //public static DA.BLL.MovieDatabase.People BLL_People = new DA.BLL.MovieDatabase.People(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.TVEpisodeQueue BLL_TVEpisodeQueue = new DA.BLL.MovieDatabase.TVEpisodeQueue(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.TVEpisodeQueue_Errors BLL_TVEpisodeQueue_Errors = new DA.BLL.MovieDatabase.TVEpisodeQueue_Errors(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
         //public static DA.BLL.MovieDatabase.MovieQueue_Errors BLL_MovieQueue_Errors = new DA.BLL.MovieDatabase.MovieQueue_Errors(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);

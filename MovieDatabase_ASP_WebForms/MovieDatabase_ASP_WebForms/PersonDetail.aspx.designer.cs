@@ -31,24 +31,6 @@ namespace MovieDatabase_ASP_WebForms {
         protected global::System.Web.UI.WebControls.Label lblFullName;
         
         /// <summary>
-        /// lblIMDBID_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIMDBID_Label;
-        
-        /// <summary>
-        /// lblIMDBID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIMDBID;
-        
-        /// <summary>
         /// lblFirstName_Label control.
         /// </summary>
         /// <remarks>
@@ -121,571 +103,310 @@ namespace MovieDatabase_ASP_WebForms {
         protected global::System.Web.UI.WebControls.Label lblSuffix;
         
         /// <summary>
-        /// lblSimplePlot_Label control.
+        /// lblIMDBID_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSimplePlot_Label;
+        protected global::System.Web.UI.WebControls.Label lblIMDBID_Label;
         
         /// <summary>
-        /// lblSimplePlot control.
+        /// lblIMDBID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSimplePlot;
+        protected global::System.Web.UI.WebControls.Label lblIMDBID;
         
         /// <summary>
-        /// lblPlot_Label control.
+        /// lblBirthName_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPlot_Label;
+        protected global::System.Web.UI.WebControls.Label lblBirthName_Label;
         
         /// <summary>
-        /// lblPlot control.
+        /// lblBirthName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPlot;
+        protected global::System.Web.UI.WebControls.Label lblBirthName;
         
         /// <summary>
-        /// lblCast control.
+        /// lblDateOfBirth_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCast;
+        protected global::System.Web.UI.WebControls.Label lblDateOfBirth_Label;
         
         /// <summary>
-        /// gvCast control.
+        /// lblDateOfBirth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvCast;
+        protected global::System.Web.UI.WebControls.Label lblDateOfBirth;
         
         /// <summary>
-        /// linkSeeFullCast control.
+        /// lblDateOfDeath_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink linkSeeFullCast;
+        protected global::System.Web.UI.WebControls.Label lblDateOfDeath_Label;
         
         /// <summary>
-        /// lblDirectors_Label control.
+        /// lblDateOfDeath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDirectors_Label;
+        protected global::System.Web.UI.WebControls.Label lblDateOfDeath;
         
         /// <summary>
-        /// gvDirectors control.
+        /// lblPlaceOfBirth_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvDirectors;
+        protected global::System.Web.UI.WebControls.Label lblPlaceOfBirth_Label;
         
         /// <summary>
-        /// lblWriters_Label control.
+        /// lblPlaceOfBirth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWriters_Label;
+        protected global::System.Web.UI.WebControls.Label lblPlaceOfBirth;
         
         /// <summary>
-        /// gvWriters control.
+        /// lblActorActress_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvWriters;
+        protected global::System.Web.UI.WebControls.Label lblActorActress_Label;
         
         /// <summary>
-        /// lblSimpleTVEpisodes_Label control.
+        /// lblActorActress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSimpleTVEpisodes_Label;
+        protected global::System.Web.UI.WebControls.Label lblActorActress;
         
         /// <summary>
-        /// gvSimpleTVEpisodes control.
+        /// lblSex_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvSimpleTVEpisodes;
+        protected global::System.Web.UI.WebControls.Label lblSex_Label;
         
         /// <summary>
-        /// lblGenres_Label control.
+        /// lblSex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGenres_Label;
+        protected global::System.Web.UI.WebControls.Label lblSex;
         
         /// <summary>
-        /// gvGenres control.
+        /// lblHeight_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvGenres;
+        protected global::System.Web.UI.WebControls.Label lblHeight_Label;
         
         /// <summary>
-        /// lblMovieTrivia_Label control.
+        /// lblHeight control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMovieTrivia_Label;
+        protected global::System.Web.UI.WebControls.Label lblHeight;
         
         /// <summary>
-        /// gvMovieTrivia control.
+        /// lblHeightFeet_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvMovieTrivia;
+        protected global::System.Web.UI.WebControls.Label lblHeightFeet_Label;
         
         /// <summary>
-        /// lblGoofs_Label control.
+        /// lblHeightFeet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGoofs_Label;
+        protected global::System.Web.UI.WebControls.Label lblHeightFeet;
         
         /// <summary>
-        /// gvGoofs control.
+        /// lblHeightInches_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvGoofs;
+        protected global::System.Web.UI.WebControls.Label lblHeightInches_Label;
         
         /// <summary>
-        /// lblMovieQuotes control.
+        /// lblHeightInches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMovieQuotes;
+        protected global::System.Web.UI.WebControls.Label lblHeightInches;
         
         /// <summary>
-        /// tblMovieQuotes control.
+        /// lblIIMDBURL_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblMovieQuotes;
+        protected global::System.Web.UI.WebControls.Label lblIIMDBURL_Label;
         
         /// <summary>
-        /// lblCountries_Label control.
+        /// linklIMDBURL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCountries_Label;
+        protected global::System.Web.UI.WebControls.HyperLink linklIMDBURL;
         
         /// <summary>
-        /// gvCountries control.
+        /// lblBio_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvCountries;
+        protected global::System.Web.UI.WebControls.Label lblBio_Label;
         
         /// <summary>
-        /// lblFilmingLocations_Label control.
+        /// lblBio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFilmingLocations_Label;
+        protected global::System.Web.UI.WebControls.Label lblBio;
         
         /// <summary>
-        /// gvFilmingLocations control.
+        /// lblBorn_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvFilmingLocations;
+        protected global::System.Web.UI.WebControls.Label lblBorn_Label;
         
         /// <summary>
-        /// lblLanguages_Label control.
+        /// lblBorn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLanguages_Label;
+        protected global::System.Web.UI.WebControls.Label lblBorn;
         
         /// <summary>
-        /// gvLanguages control.
+        /// lblDied_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvLanguages;
+        protected global::System.Web.UI.WebControls.Label lblDied_Label;
         
         /// <summary>
-        /// lblAKAs_Label control.
+        /// lblDied control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAKAs_Label;
+        protected global::System.Web.UI.WebControls.Label lblDied;
         
         /// <summary>
-        /// gvAKAs control.
+        /// lblNicknames_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvAKAs;
+        protected global::System.Web.UI.WebControls.Label lblNicknames_Label;
         
         /// <summary>
-        /// lblSimilarMovies_Label control.
+        /// gvNicknames control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSimilarMovies_Label;
+        protected global::System.Web.UI.WebControls.GridView gvNicknames;
         
         /// <summary>
-        /// gvSimilarMovies control.
+        /// lblTrivia_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvSimilarMovies;
+        protected global::System.Web.UI.WebControls.Label lblTrivia_Label;
         
         /// <summary>
-        /// lblBusinessData_Label control.
+        /// gvTrivia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBusinessData_Label;
+        protected global::System.Web.UI.WebControls.GridView gvTrivia;
         
         /// <summary>
-        /// lblBudget_Label control.
+        /// lblQuotes_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBudget_Label;
+        protected global::System.Web.UI.WebControls.Label lblQuotes_Label;
         
         /// <summary>
-        /// lblBudget control.
+        /// gvQuotes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBudget;
-        
-        /// <summary>
-        /// lblOpeningWeekend_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOpeningWeekend_Label;
-        
-        /// <summary>
-        /// lblOpeningWeekend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOpeningWeekend;
-        
-        /// <summary>
-        /// lblGrossUSA_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGrossUSA_Label;
-        
-        /// <summary>
-        /// lblGrossUSA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGrossUSA;
-        
-        /// <summary>
-        /// lblWorldwide_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWorldwide_Label;
-        
-        /// <summary>
-        /// lblWorldwide control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWorldwide;
-        
-        /// <summary>
-        /// lblTechnicalData_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTechnicalData_Label;
-        
-        /// <summary>
-        /// lblTechnicalData_Runtime_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTechnicalData_Runtime_Label;
-        
-        /// <summary>
-        /// lblTechnicalData_Runtime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTechnicalData_Runtime;
-        
-        /// <summary>
-        /// lblSoundMix_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSoundMix_Label;
-        
-        /// <summary>
-        /// lblSoundMix control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSoundMix;
-        
-        /// <summary>
-        /// lblColor_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblColor_Label;
-        
-        /// <summary>
-        /// lblColor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblColor;
-        
-        /// <summary>
-        /// lblAspectRatio_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAspectRatio_Label;
-        
-        /// <summary>
-        /// lblAspectRatio control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAspectRatio;
-        
-        /// <summary>
-        /// lblCamera_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCamera_Label;
-        
-        /// <summary>
-        /// lblCamera control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCamera;
-        
-        /// <summary>
-        /// lblLaboratory_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLaboratory_Label;
-        
-        /// <summary>
-        /// lblLaboratory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLaboratory;
-        
-        /// <summary>
-        /// lblFilmLength_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFilmLength_Label;
-        
-        /// <summary>
-        /// lblFilmLength control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFilmLength;
-        
-        /// <summary>
-        /// lblNegativeFormat_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNegativeFormat_Label;
-        
-        /// <summary>
-        /// lblNegativeFormat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNegativeFormat;
-        
-        /// <summary>
-        /// lblCinematographicProcess_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCinematographicProcess_Label;
-        
-        /// <summary>
-        /// lblCinematographicProcess control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCinematographicProcess;
-        
-        /// <summary>
-        /// lblPrintedFilmFormat_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrintedFilmFormat_Label;
-        
-        /// <summary>
-        /// lblPrintedFilmFormat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrintedFilmFormat;
-        
-        /// <summary>
-        /// lblKeywords_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblKeywords_Label;
-        
-        /// <summary>
-        /// lblKeywords control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblKeywords;
+        protected global::System.Web.UI.WebControls.GridView gvQuotes;
         
         /// <summary>
         /// lblPlaceholder control.

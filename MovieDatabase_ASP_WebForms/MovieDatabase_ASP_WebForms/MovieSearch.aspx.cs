@@ -169,15 +169,6 @@ namespace MovieDatabase_ASP_WebForms
                     }
                 }
 
-
-                //_Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-                //_Cmd = new SqlCommand(SQL, _Cn);
-                //_Table = new DataTable();
-                //_Adapter = new SqlDataAdapter(_Cmd);
-                //_Adapter.Fill(_Table);
-                //_Adapter.Dispose();
-                //_Cmd.Dispose();
-
                 if (_Table != null)
                 {
                     if (_Table.Rows.Count > 0)

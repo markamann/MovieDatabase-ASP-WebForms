@@ -56,6 +56,13 @@ header {
     vertical-align: middle;
 }
 
+.CenteredContentLine {
+    float: left;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .FullContentBlock {
     float:left;
     width: 1400px;
