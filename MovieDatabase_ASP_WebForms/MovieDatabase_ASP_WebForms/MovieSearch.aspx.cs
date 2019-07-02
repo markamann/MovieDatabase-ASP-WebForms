@@ -26,6 +26,7 @@ namespace MovieDatabase_ASP_WebForms
                 pnlTitle.Visible = false;
                 pnlGenre.Visible = false;
                 pnlKeyword.Visible = false;
+                pnlPerson.Visible = false;
                 pnlIMDBID.Visible = false;
                 pnlResults.Visible = false;
 
@@ -41,6 +42,7 @@ namespace MovieDatabase_ASP_WebForms
             PopulateDDLTitle();
             PopulateDDLGenre();
             PopulateDDLKeyword();
+            PopulateDDLPeople();
         }
 
         protected void PopulateDDLTitle()
@@ -102,6 +104,19 @@ namespace MovieDatabase_ASP_WebForms
             }
         }
 
+        protected void PopulateDDLPeople()
+        {
+            List<DA.Models.MovieDatabase.Person> people = Global.BLL_People.SelectAll_list();
+            ddlPeople.Items.Clear();
+            ListItem li;
+
+            foreach (DA.Models.MovieDatabase.Person p in people)
+            {
+                li = new ListItem(p.FullName, p.PersonID.ToString());
+                ddlPeople.Items.Add(li);
+            }
+        }
+
         protected void chkTitle_IncludeTVEpisodes_CheckedChanged(object sender, EventArgs e)
         {
             PopulateDDLTitle();
@@ -113,6 +128,7 @@ namespace MovieDatabase_ASP_WebForms
             pnlTitle.Visible = false;
             pnlGenre.Visible = false;
             pnlKeyword.Visible = false;
+            pnlPerson.Visible = false;
             pnlIMDBID.Visible = false;
         }
 
@@ -122,6 +138,7 @@ namespace MovieDatabase_ASP_WebForms
             pnlTitle.Visible = true;
             pnlGenre.Visible = false;
             pnlKeyword.Visible = false;
+            pnlPerson.Visible = false;
             pnlIMDBID.Visible = false;
         }
 
@@ -131,6 +148,7 @@ namespace MovieDatabase_ASP_WebForms
             pnlTitle.Visible = false;
             pnlGenre.Visible = true;
             pnlKeyword.Visible = false;
+            pnlPerson.Visible = false;
             pnlIMDBID.Visible = false;
         }
 
@@ -140,6 +158,17 @@ namespace MovieDatabase_ASP_WebForms
             pnlTitle.Visible = false;
             pnlGenre.Visible = false;
             pnlKeyword.Visible = true;
+            pnlPerson.Visible = false;
+            pnlIMDBID.Visible = false;
+        }
+
+        protected void lbPerson_Click(object sender, EventArgs e)
+        {
+            pnlType.Visible = false;
+            pnlTitle.Visible = false;
+            pnlGenre.Visible = false;
+            pnlKeyword.Visible = false;
+            pnlPerson.Visible = true;
             pnlIMDBID.Visible = false;
         }
 
@@ -149,6 +178,7 @@ namespace MovieDatabase_ASP_WebForms
             pnlTitle.Visible = false;
             pnlGenre.Visible = false;
             pnlKeyword.Visible = false;
+            pnlPerson.Visible = false;
             pnlIMDBID.Visible = true;
         }
 
@@ -209,6 +239,11 @@ namespace MovieDatabase_ASP_WebForms
         }
 
         protected void btnSearchByKeyword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSearchByPerson_Click(object sender, EventArgs e)
         {
 
         }

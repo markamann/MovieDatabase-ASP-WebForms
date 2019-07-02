@@ -34,6 +34,13 @@ header {
     vertical-align: top;
 }
 
+.PhotoAndNameBlock {
+    float: left;
+    width: 1400px;
+    text-align: center;
+    vertical-align: top;
+}
+
 .Photo {
     float:left;
     width: 200px;
@@ -42,9 +49,32 @@ header {
     vertical-align: middle;
 }
 
+.PersonPhoto {
+    float: left;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.FullNameBlock {
+    float: left;
+    width: 900px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
 .BaseDataBlock {
     float:left;
     width: 1200px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.PersonBaseDataBlock {
+    float: left;
+    width: 1400px;
     text-align: left;
     vertical-align: top;
 }

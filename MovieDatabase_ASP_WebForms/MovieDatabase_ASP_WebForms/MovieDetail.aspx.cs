@@ -22,6 +22,8 @@ namespace MovieDatabase_ASP_WebForms
                 // Base
                 imgMoviePoster.AlternateText = movie.Title + " - Poster";
                 imgMoviePoster.ImageUrl = movie.WebPosterURL;
+                linkMoviePoster.NavigateUrl = movie.WebPosterURL;
+                linkMoviePoster.Target = "_blank";
                 lblTitle.Text = movie.Title;
                 lblOriginalTitle.Text = movie.OriginalTitle;
                 lblIMDBID.Text = movie.IMDBID;

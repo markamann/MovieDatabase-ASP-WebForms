@@ -23,6 +23,8 @@ namespace MovieDatabase_ASP_WebForms
                 // Base
                 lblFullName.Text = person.FullName;
                 imgPersonPhoto.ImageUrl = person.WebPhotoURL;
+                linkPersonPhoto.NavigateUrl = person.WebPhotoURL;
+                linkPersonPhoto.Target = "_blank";
                 lblFirstName.Text = person.FirstName;
                 lblMiddleName.Text = person.MiddleName;
                 lblLastName.Text = person.LastName;

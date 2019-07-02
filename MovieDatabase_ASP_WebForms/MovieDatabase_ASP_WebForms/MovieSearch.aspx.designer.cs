@@ -67,6 +67,15 @@ namespace MovieDatabase_ASP_WebForms {
         protected global::System.Web.UI.WebControls.LinkButton lbKeyword;
         
         /// <summary>
+        /// lbPerson control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbPerson;
+        
+        /// <summary>
         /// lbIMDBID control.
         /// </summary>
         /// <remarks>
@@ -227,6 +236,42 @@ namespace MovieDatabase_ASP_WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearchByKeyword;
+        
+        /// <summary>
+        /// pnlPerson control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlPerson;
+        
+        /// <summary>
+        /// lblPeerson_Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPeerson_Label;
+        
+        /// <summary>
+        /// ddlPeople control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPeople;
+        
+        /// <summary>
+        /// btnSearchByPerson control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearchByPerson;
         
         /// <summary>
         /// pnlIMDBID control.

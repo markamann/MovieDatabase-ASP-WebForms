@@ -13,6 +13,15 @@ namespace MovieDatabase_ASP_WebForms {
     public partial class PersonDetail {
         
         /// <summary>
+        /// linkPersonPhoto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkPersonPhoto;
+        
+        /// <summary>
         /// imgPersonPhoto control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,24 @@ namespace MovieDatabase_ASP_WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblFullName;
+        
+        /// <summary>
+        /// lblIMDBID_Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIMDBID_Label;
+        
+        /// <summary>
+        /// lblIMDBID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIMDBID;
         
         /// <summary>
         /// lblFirstName_Label control.
@@ -101,24 +128,6 @@ namespace MovieDatabase_ASP_WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSuffix;
-        
-        /// <summary>
-        /// lblIMDBID_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIMDBID_Label;
-        
-        /// <summary>
-        /// lblIMDBID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIMDBID;
         
         /// <summary>
         /// lblBirthName_Label control.

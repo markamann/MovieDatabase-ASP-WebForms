@@ -6,94 +6,95 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div id="divMainContainer" class="MainContainer">
         <h2>Person Detail</h2>
-        <div id="divBaseBlock" class="BaseBlock">
-            <div id="divPersonPhoto" class="Photo">
-                <asp:Image runat="server" ID="imgPersonPhoto" Height="200px" />
+        <div id="divPhotoAndNameBlock" class="PhotoAndNameBlock">
+            <div id="divPersonPhoto" class="PersonPhoto">
+                <asp:HyperLink runat="server" ID="linkPersonPhoto"><asp:Image runat="server" ID="imgPersonPhoto" Height="200px" /></asp:HyperLink>
             </div>
-            <div id="divBaseDataBlock" class="BaseDataBlock">
-                <div id="divFullName" class="CenteredContentLine" style="width: 1200px;">
-                    <asp:Label runat="server" ID="lblFullName" Font-Bold="true" Font-Size="24pt" />
-                </div>
-                <div style="clear: both;"></div>
-                <div id="divFirstName" class="ContentLine" style="width: 300px;">
-                    <asp:Label runat="server" ID="lblFirstName_Label" Font-Bold="true" Text="First Name:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblFirstName" Font-Bold="false" />
-                </div>
-                <div id="divMiddleName" class="ContentLine" style="width: 300px;">
-                    <asp:Label runat="server" ID="lblMiddleName_Label" Font-Bold="true" Text="Middle Name:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblMiddleName" Font-Bold="false" />
-                </div>
-                <div id="divLastName" class="ContentLine" style="width: 300px;">
-                    <asp:Label runat="server" ID="lblLastName_Label" Font-Bold="true" Text="Last Name:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblLastName" Font-Bold="false" />
-                </div>
-                <div id="divSuffix" class="ContentLine" style="width: 300px;">
-                    <asp:Label runat="server" ID="lblSuffix_Label" Font-Bold="true" Text="Suffix:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblSuffix" Font-Bold="false" />
-                </div>
-                <div style="clear: both;"></div>
-                <div id="divIMDBID" class="ContentLine" style="width: 250px;">
-                    <asp:Label runat="server" ID="lblIMDBID_Label" Font-Bold="true" Text="IMDBID:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblIMDBID" Font-Bold="false" />
-                </div>
-                <div id="divBirthName" class="ContentLine" style="width: 350px;">
-                    <asp:Label runat="server" ID="lblBirthName_Label" Font-Bold="true" Text="Birth Name:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblBirthName" Font-Bold="false" />
-                </div>
-                <div id="divDateOfBirth" class="ContentLine" style="width: 300px;">
-                    <asp:Label runat="server" ID="lblDateOfBirth_Label" Font-Bold="true" Text="Date Of Birth:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblDateOfBirth" Font-Bold="false" />
-                </div>
-                <div id="divDateOfDeath" class="ContentLine" style="width: 300px;">
-                    <asp:Label runat="server" ID="lblDateOfDeath_Label" Font-Bold="true" Text="Date Of Death:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblDateOfDeath" Font-Bold="false" />
-                </div>
-                <div style="clear: both;"></div>
-                <div id="divPlaceOfBirth" class="ContentLine" style="width: 400px;">
-                    <asp:Label runat="server" ID="lblPlaceOfBirth_Label" Font-Bold="true" Text="Place Of Birth:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblPlaceOfBirth" Font-Bold="false" />
-                </div>
-                <div id="divActorActress" class="ContentLine" style="width: 400px;">
-                    <asp:Label runat="server" ID="lblActorActress_Label" Font-Bold="true" Text="ActorActress:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblActorActress" Font-Bold="false" />
-                </div>
-                <div id="divSex" class="ContentLine" style="width: 400px;">
-                    <asp:Label runat="server" ID="lblSex_Label" Font-Bold="true" Text="Sex:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblSex" Font-Bold="false" />
-                </div>
-                <div style="clear: both;"></div>
-                <div id="divHeight" class="ContentLine" style="width: 400px;">
-                    <asp:Label runat="server" ID="lblHeight_Label" Font-Bold="true" Text="Height:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblHeight" Font-Bold="false" />
-                </div>
-                <div id="divHeightFeet" class="ContentLine" style="width: 400px;">
-                    <asp:Label runat="server" ID="lblHeightFeet_Label" Font-Bold="true" Text="Height Feet:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblHeightFeet" Font-Bold="false" />
-                </div>
-                <div id="divHeightInches" class="ContentLine" style="width: 400px;">
-                    <asp:Label runat="server" ID="lblHeightInches_Label" Font-Bold="true" Text="Height Inches:" />
-                    &nbsp;
-                    <asp:Label runat="server" ID="lblHeightInches" Font-Bold="false" />
-                </div>
-                <div style="clear: both;"></div>
-                <div id="divIIMDBURL" class="ContentLine" style="width: 1200px;">
-                    <asp:Label runat="server" ID="lblIIMDBURL_Label" Font-Bold="true" Text="IIMDB URL:" />
-                    &nbsp;
-                    <asp:HyperLink runat="server" ID="linklIMDBURL" />
-                </div>
+            <div id="divFullName" class="FullNameBlock">
+                <asp:Label runat="server" ID="lblFullName" Font-Bold="true" Font-Size="36pt" />
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divPersonBaseDataBlock" class="PersonBaseDataBlock">
+            <div id="divIMDBID" class="ContentLine" style="width: 250px;">
+                <asp:Label runat="server" ID="lblIMDBID_Label" Font-Bold="true" Text="IMDBID:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblIMDBID" Font-Bold="false" />
+            </div>
+            <div id="divFirstName" class="ContentLine" style="width: 300px;">
+                <asp:Label runat="server" ID="lblFirstName_Label" Font-Bold="true" Text="First Name:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblFirstName" Font-Bold="false" />
+            </div>
+            <div id="divMiddleName" class="ContentLine" style="width: 300px;">
+                <asp:Label runat="server" ID="lblMiddleName_Label" Font-Bold="true" Text="Middle Name:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblMiddleName" Font-Bold="false" />
+            </div>
+            <div id="divLastName" class="ContentLine" style="width: 300px;">
+                <asp:Label runat="server" ID="lblLastName_Label" Font-Bold="true" Text="Last Name:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblLastName" Font-Bold="false" />
+            </div>
+            <div id="divSuffix" class="ContentLine" style="width: 250px;">
+                <asp:Label runat="server" ID="lblSuffix_Label" Font-Bold="true" Text="Suffix:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblSuffix" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divBirthName" class="ContentLine" style="width: 350px;">
+                <asp:Label runat="server" ID="lblBirthName_Label" Font-Bold="true" Text="Birth Name:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblBirthName" Font-Bold="false" />
+            </div>
+            <div id="divDateOfBirth" class="ContentLine" style="width: 300px;">
+                <asp:Label runat="server" ID="lblDateOfBirth_Label" Font-Bold="true" Text="Date Of Birth:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblDateOfBirth" Font-Bold="false" />
+            </div>
+            <div id="divDateOfDeath" class="ContentLine" style="width: 300px;">
+                <asp:Label runat="server" ID="lblDateOfDeath_Label" Font-Bold="true" Text="Date Of Death:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblDateOfDeath" Font-Bold="false" />
+            </div>
+            <div id="divPlaceOfBirth" class="ContentLine" style="width: 450px;">
+                <asp:Label runat="server" ID="lblPlaceOfBirth_Label" Font-Bold="true" Text="Place Of Birth:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblPlaceOfBirth" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divActorActress" class="ContentLine" style="width: 400px;">
+                <asp:Label runat="server" ID="lblActorActress_Label" Font-Bold="true" Text="ActorActress:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblActorActress" Font-Bold="false" />
+            </div>
+            <div id="divSex" class="ContentLine" style="width: 400px;">
+                <asp:Label runat="server" ID="lblSex_Label" Font-Bold="true" Text="Sex:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblSex" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divHeight" class="ContentLine" style="width: 400px;">
+                <asp:Label runat="server" ID="lblHeight_Label" Font-Bold="true" Text="Height:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblHeight" Font-Bold="false" />
+            </div>
+            <div id="divHeightFeet" class="ContentLine" style="width: 400px;">
+                <asp:Label runat="server" ID="lblHeightFeet_Label" Font-Bold="true" Text="Height Feet:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblHeightFeet" Font-Bold="false" />
+            </div>
+            <div id="divHeightInches" class="ContentLine" style="width: 400px;">
+                <asp:Label runat="server" ID="lblHeightInches_Label" Font-Bold="true" Text="Height Inches:" />
+                &nbsp;
+                <asp:Label runat="server" ID="lblHeightInches" Font-Bold="false" />
+            </div>
+            <div style="clear: both;"></div>
+            <div id="divIIMDBURL" class="ContentLine" style="width: 1200px;">
+                <asp:Label runat="server" ID="lblIIMDBURL_Label" Font-Bold="true" Text="IIMDB URL:" />
+                &nbsp;
+                <asp:HyperLink runat="server" ID="linklIMDBURL" />
             </div>
         </div>
         <div style="clear: both;"></div>
