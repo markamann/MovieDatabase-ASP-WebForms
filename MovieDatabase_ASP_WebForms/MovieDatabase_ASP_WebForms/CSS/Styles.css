@@ -29,7 +29,7 @@ header {
 
 .BaseBlock {
     float:left;
-    width: 1400px;
+    width: 1405px;
     text-align: center;
     vertical-align: top;
 }
@@ -41,15 +41,30 @@ header {
     vertical-align: top;
 }
 
+.MoviePosterAndTitleBlock {
+    float: left;
+    width: 1400px;
+    text-align: center;
+    vertical-align: top;
+}
+
 .Photo {
     float:left;
-    width: 200px;
+    width: 350px;
     height: 200px;
     text-align: center;
     vertical-align: middle;
 }
 
 .PersonPhoto {
+    float: left;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.MoviePoster {
     float: left;
     width: 500px;
     height: 200px;
@@ -65,9 +80,24 @@ header {
     line-height: 200px;
 }
 
+TitleBlock {
+    float: left;
+    width: 900px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
 .BaseDataBlock {
     float:left;
     width: 1200px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.MovieBaseDataBlock {
+    float: left;
+    width: 1400px;
     text-align: left;
     vertical-align: top;
 }

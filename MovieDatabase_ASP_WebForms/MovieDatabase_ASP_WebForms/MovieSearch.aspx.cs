@@ -4,6 +4,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text;
 
 namespace MovieDatabase_ASP_WebForms
 {
@@ -29,6 +30,7 @@ namespace MovieDatabase_ASP_WebForms
                 pnlPerson.Visible = false;
                 pnlIMDBID.Visible = false;
                 pnlResults.Visible = false;
+                lblSearchByIMDBID_Error.Text = "";
 
                 Populate();
                 chkTitle_IncludeTVEpisodes.CheckedChanged += chkTitle_IncludeTVEpisodes_CheckedChanged;
@@ -106,15 +108,29 @@ namespace MovieDatabase_ASP_WebForms
 
         protected void PopulateDDLPeople()
         {
-            List<DA.Models.MovieDatabase.Person> people = Global.BLL_People.SelectAll_list();
-            ddlPeople.Items.Clear();
-            ListItem li;
-
-            foreach (DA.Models.MovieDatabase.Person p in people)
+            SQL = "SELECT PersonID, FullName FROM People ORDER BY FullName";
+            using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
             {
-                li = new ListItem(p.FullName, p.PersonID.ToString());
-                ddlPeople.Items.Add(li);
+                using (SqlCommand cmd = new SqlCommand(SQL, con))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        _Table = new DataTable();
+                        adapter.Fill(_Table);
+                    }
+                }
             }
+
+            ddlPeople.Items.Clear();
+            if (_Table != null)
+            {
+                ddlPeople.Items.Clear();
+                ddlPeople.DataSource = _Table;
+                ddlPeople.DataTextField = "FullName";
+                ddlPeople.DataValueField = "PersonID";
+                ddlPeople.DataBind();
+            }
+
         }
 
         protected void chkTitle_IncludeTVEpisodes_CheckedChanged(object sender, EventArgs e)
@@ -182,6 +198,19 @@ namespace MovieDatabase_ASP_WebForms
             pnlIMDBID.Visible = true;
         }
 
+        protected void gvResults_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "View")
+            {
+                String MovieID = e.CommandArgument.ToString();
+
+                this.Session["MovieID"] = MovieID;
+                this.Session["ReferringPage"] = "MovieSearch.aspx";
+
+                Response.Redirect("MovieDetail.aspx");
+            }
+        }
+
         protected void btnSearchByType_Click(object sender, EventArgs e)
         {
             if (ddlType.SelectedItem != null)
@@ -215,45 +244,185 @@ namespace MovieDatabase_ASP_WebForms
             }
         }
 
-        protected void gvResults_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-            if (e.CommandName == "View")
-            {
-                String MovieID = e.CommandArgument.ToString();
-
-                this.Session["MovieID"] = MovieID;
-                this.Session["ReferringPage"] = "MovieSearch.aspx";
-
-                Response.Redirect("MovieDetail.aspx");
-            }
-        }
-
         protected void btnSearchByTitle_Click(object sender, EventArgs e)
         {
+            if (ddlTitle.SelectedItem != null)
+            {
+                SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE Title = '" + ddlTitle.SelectedItem.ToString() + "' ORDER BY [Year]";
+                using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                {
+                    using (SqlCommand cmd = new SqlCommand(SQL, con))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            _Table = new DataTable();
+                            adapter.Fill(_Table);
+                        }
+                    }
+                }
 
+                if (_Table != null)
+                {
+                    if (_Table.Rows.Count > 0)
+                    {
+                        gvResults.DataSource = _Table;
+                        gvResults.DataBind();
+                        pnlResults.Visible = true;
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
         }
 
         protected void btnSearchByGenre_Click(object sender, EventArgs e)
         {
+            if (ddlGenre.SelectedItem != null)
+            {
+                SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE MovieID IN (SELECT DISTINCT MovieID FROM Genres WHERE GenreName = '" + ddlGenre.SelectedItem.ToString() + "') ORDER BY [Title]";
+                using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                {
+                    using (SqlCommand cmd = new SqlCommand(SQL, con))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            _Table = new DataTable();
+                            adapter.Fill(_Table);
+                        }
+                    }
+                }
 
+                if (_Table != null)
+                {
+                    if (_Table.Rows.Count > 0)
+                    {
+                        gvResults.DataSource = _Table;
+                        gvResults.DataBind();
+                        pnlResults.Visible = true;
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
         }
 
         protected void btnSearchByKeyword_Click(object sender, EventArgs e)
         {
+            if (ddlKeyword.SelectedItem != null)
+            {
+                SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE MovieID IN (SELECT MovieID FROM Keywords K INNER JOIN KeywordList KL ON K.KeywordID = KL.KeywordID WHERE KL.Keyword = '" + ddlKeyword.SelectedItem.ToString() + "') ORDER BY [Title]";
+                using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                {
+                    using (SqlCommand cmd = new SqlCommand(SQL, con))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            _Table = new DataTable();
+                            adapter.Fill(_Table);
+                        }
+                    }
+                }
 
+                if (_Table != null)
+                {
+                    if (_Table.Rows.Count > 0)
+                    {
+                        gvResults.DataSource = _Table;
+                        gvResults.DataBind();
+                        pnlResults.Visible = true;
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
         }
 
         protected void btnSearchByPerson_Click(object sender, EventArgs e)
         {
+            if (ddlPeople.SelectedValue != null)
+            {
+                SQL = "SELECT M.MovieID, M.Title, M.[Type], M.[Year] FROM Movies M WHERE MovieID IN (SELECT DISTINCT MovieID FROM CastMembers WHERE PersonID = " + ddlPeople.SelectedValue.ToString() + ") ORDER BY[Title]";
+                using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                {
+                    using (SqlCommand cmd = new SqlCommand(SQL, con))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            _Table = new DataTable();
+                            adapter.Fill(_Table);
+                        }
+                    }
+                }
 
+                if (_Table != null)
+                {
+                    if (_Table.Rows.Count > 0)
+                    {
+                        gvResults.DataSource = _Table;
+                        gvResults.DataBind();
+                        pnlResults.Visible = true;
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
         }
 
         protected void btnSearchByIMDBID_Click(object sender, EventArgs e)
         {
+            lblSearchByIMDBID_Error.Text = "";
+            if (txtSearchBy_IMDBID.Text.Equals(""))
+            {
+                lblSearchByIMDBID_Error.Text = "Please enter a valid IMDB ID.";
+                pnlResults.Visible = false;
+            }
+            else
+            {
+                if (!Global.BLL_Movies.Contains(txtSearchBy_IMDBID.Text.Trim()))
+                {
+                    lblSearchByIMDBID_Error.Text = "It appears that the IMDB ID you entered does not match any entries in the database.  Please try another IMDB ID.";
+                    pnlResults.Visible = false;
+                }
+                else
+                {
+                    DA.Models.MovieDatabase.Movie movie = Global.BLL_Movies.SelectByIMDBID_model(txtSearchBy_IMDBID.Text.Trim());
+                    SQL = "SELECT MovieID, Title, [Type], [Year] FROM Movies WHERE MovieID = " + movie.MovieID.ToString();
+                    using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                    {
+                        using (SqlCommand cmd = new SqlCommand(SQL, con))
+                        {
+                            using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                            {
+                                _Table = new DataTable();
+                                adapter.Fill(_Table);
+                            }
+                        }
+                    }
 
+                    if (_Table != null)
+                    {
+                        if (_Table.Rows.Count > 0)
+                        {
+                            gvResults.DataSource = _Table;
+                            gvResults.DataBind();
+                            pnlResults.Visible = true;
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                }
+            }
         }
-
-
 
     }
 }
