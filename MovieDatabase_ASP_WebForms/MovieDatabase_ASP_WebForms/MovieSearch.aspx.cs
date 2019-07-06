@@ -11,10 +11,7 @@ namespace MovieDatabase_ASP_WebForms
     public partial class MovieSearch : System.Web.UI.Page
     {
 
-        private SqlConnection _Cn = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private);
-        private SqlCommand _Cmd = null;
         private DataTable _Table = null;
-        private SqlDataAdapter _Adapter = null;
         private String SQL = String.Empty;
 
         protected void Page_Load(object sender, EventArgs e)
