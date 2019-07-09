@@ -14,7 +14,7 @@
         <br /><br />
 
         <h3><u>Background:</u></h3>
-        I was looking for a project to use as a learning tool.  I am a movie fan.  So, I decided to develop an application that uses the <a href="https://www.myapifilms.com" target="_blank">MyAPIFilms</a> Internet Movie Database (IMDB) API  that would automatically populate my database with data from the <a href="http://www.imdb.com" target="_blank">Internet Movie Database</a>.
+        I was looking for a project to use as a learning tool.  I am a movie fan.  So, I decided to develop an application that uses the <a href="https://www.myapifilms.com" target="_blank">MyAPIFilms</a> Internet Movie Database (IMDB) API  to automatically populate my database with data from the <a href="http://www.imdb.com" target="_blank">Internet Movie Database</a>.
         <br /><br />
         This application, MovieDatabaseWorker, is a Windows console application that can run continuously.  Once I seeded it with a movie, it used the API to download and store the movie data including a cast list.  It then uses the movie's cast list to look up the filmographies of the cast and adds those movies to a queue for future processing.
         <br /><br />
