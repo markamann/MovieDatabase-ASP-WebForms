@@ -229,14 +229,19 @@ namespace MovieDatabase_ASP_WebForms
                 {
                     if (_Table.Rows.Count > 0)
                     {
+                        lblRecordsReturned.Text = _Table.Rows.Count.ToString() + " record(s) returned";
                         gvResults.DataSource = _Table;
                         gvResults.DataBind();
                         pnlResults.Visible = true;
                     }
                     else
                     {
-
+                        lblRecordsReturned.Text = "No records returned";
                     }
+                }
+                else
+                {
+                    lblRecordsReturned.Text = "No records returned";
                 }
             }
         }
@@ -262,14 +267,19 @@ namespace MovieDatabase_ASP_WebForms
                 {
                     if (_Table.Rows.Count > 0)
                     {
+                        lblRecordsReturned.Text = _Table.Rows.Count.ToString() + " record(s) returned";
                         gvResults.DataSource = _Table;
                         gvResults.DataBind();
                         pnlResults.Visible = true;
                     }
                     else
                     {
-
+                        lblRecordsReturned.Text = "No records returned";
                     }
+                }
+                else
+                {
+                    lblRecordsReturned.Text = "No records returned";
                 }
             }
         }
@@ -295,14 +305,19 @@ namespace MovieDatabase_ASP_WebForms
                 {
                     if (_Table.Rows.Count > 0)
                     {
+                        lblRecordsReturned.Text = _Table.Rows.Count.ToString() + " record(s) returned";
                         gvResults.DataSource = _Table;
                         gvResults.DataBind();
                         pnlResults.Visible = true;
                     }
                     else
                     {
-
+                        lblRecordsReturned.Text = "No records returned";
                     }
+                }
+                else
+                {
+                    lblRecordsReturned.Text = "No records returned";
                 }
             }
         }
@@ -328,14 +343,19 @@ namespace MovieDatabase_ASP_WebForms
                 {
                     if (_Table.Rows.Count > 0)
                     {
+                        lblRecordsReturned.Text = _Table.Rows.Count.ToString() + " record(s) returned";
                         gvResults.DataSource = _Table;
                         gvResults.DataBind();
                         pnlResults.Visible = true;
                     }
                     else
                     {
-
+                        lblRecordsReturned.Text = "No records returned";
                     }
+                }
+                else
+                {
+                    lblRecordsReturned.Text = "No records returned";
                 }
             }
         }
@@ -361,14 +381,19 @@ namespace MovieDatabase_ASP_WebForms
                 {
                     if (_Table.Rows.Count > 0)
                     {
+                        lblRecordsReturned.Text = _Table.Rows.Count.ToString() + " record(s) returned";
                         gvResults.DataSource = _Table;
                         gvResults.DataBind();
                         pnlResults.Visible = true;
                     }
                     else
                     {
-
+                        lblRecordsReturned.Text = "No records returned";
                     }
+                }
+                else
+                {
+                    lblRecordsReturned.Text = "No records returned";
                 }
             }
         }
@@ -408,14 +433,19 @@ namespace MovieDatabase_ASP_WebForms
                     {
                         if (_Table.Rows.Count > 0)
                         {
+                            lblRecordsReturned.Text = _Table.Rows.Count.ToString() + " record(s) returned";
                             gvResults.DataSource = _Table;
                             gvResults.DataBind();
                             pnlResults.Visible = true;
                         }
                         else
                         {
-
+                            lblRecordsReturned.Text = "No records returned";
                         }
+                    }
+                    else
+                    {
+                        lblRecordsReturned.Text = "No records returned";
                     }
                 }
             }

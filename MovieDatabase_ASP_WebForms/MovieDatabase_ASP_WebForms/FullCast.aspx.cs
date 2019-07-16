@@ -74,13 +74,12 @@ namespace MovieDatabase_ASP_WebForms
         {
             if (e.CommandName == "View")
             {
-                // TODO
-                String MovieID = e.CommandArgument.ToString();
+                String PersonID = e.CommandArgument.ToString();
 
-                this.Session["MovieID"] = MovieID;
-                this.Session["ReferringPage"] = "MovieSearch.aspx";
+                this.Session["PersonID"] = PersonID;
+                this.Session["ReferringPage"] = "FullCast.aspx";
 
-                Response.Redirect("MovieDetail.aspx");
+                Response.Redirect("PersonDetail.aspx");
             }
         }
 

@@ -11,80 +11,77 @@
                 <asp:HyperLink runat="server" ID="linkMoviePoster"><asp:Image runat="server" ID="imgMoviePoster" Height="200" /></asp:HyperLink>
             </div>
             <div id="divTitle" class="TitleBlock">
-                <asp:Label runat="server" ID="lblTitle_Label" Font-Bold="true" Text="Title:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblTitle" Font-Bold="false" />
+                <asp:Label runat="server" ID="lblTitle" Font-Bold="true" Font-Size="36pt" />
             </div>
         </div>
         <div style="clear: both;"></div>
         <br />
-        <div id="divMovieBaseDataBlock" class="MovieBaseDataBlock">
-            <div id="divOriginalTitle" class="ContentLine" style="width: 1400px;">
+        <div id="divMovieBaseDataBlock" class="MarginContainer">
+            <div id="divOriginalTitle" class="ContentLine" style="width: 100%;">
                 <asp:Label runat="server" ID="lblOriginalTitle_Label" Font-Bold="true" Text="Original Title:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblOriginalTitle" Font-Bold="false" />
             </div>
             <div style="clear: both;"></div>
-            <div id="divIMDBID" class="ContentLine" style="width: 250px;">
+            <div id="divIMDBID" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblIMDBID_Label" Font-Bold="true" Text="IMDBID:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblIMDBID" Font-Bold="false" />
             </div>
-            <div id="divIType" class="ContentLine" style="width: 250px;">
+            <div id="divIType" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblType_Label" Font-Bold="true" Text="Type:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblType" Font-Bold="false" />
             </div>
-            <div id="divIMPAARating" class="ContentLine" style="width: 350px;">
+            <div id="divIMPAARating" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblMPAARating_Label" Font-Bold="true" Text="MPAA Rating:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblMPAARating" Font-Bold="false" />
             </div>
-            <div id="divIReleaseDate" class="ContentLine" style="width: 550px;">
+            <div id="divIReleaseDate" class="ContentLine" style="width: 40%;">
                 <asp:Label runat="server" ID="lblReleaseDate_Label" Font-Bold="true" Text="Release Date:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblReleaseDate" Font-Bold="false" />
             </div>
             <div style="clear: both;"></div>
-            <div id="divIYear" class="ContentLine" style="width: 400px;">
+            <div id="divIYear" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblYear_Label" Font-Bold="true" Text="Year:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblYear" Font-Bold="false" />
             </div>
-            <div id="divIRuntime" class="ContentLine" style="width: 400px;">
+            <div id="divIRuntime" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblRuntime_Label" Font-Bold="true" Text="Runtime:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblRuntime" Font-Bold="false" />
             </div>
-            <div id="divIRating" class="ContentLine" style="width: 300px;">
+            <div id="divIRating" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblRating_Label" Font-Bold="true" Text="Rating:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblRating" Font-Bold="false" />
             </div>
-            <div id="divIMetascore" class="ContentLine" style="width: 300px;">
+            <div id="divIMetascore" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblMetascore_Label" Font-Bold="true" Text="Metascore:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblMetascore" Font-Bold="false" />
             </div>
-            <div style="clear: both;"></div>
-            <div id="divIVotes" class="ContentLine" style="width: 300px;">
+            <div id="divIVotes" class="ContentLine" style="width: 20%;">
                 <asp:Label runat="server" ID="lblVotes_Label" Font-Bold="true" Text="Votes:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblVotes" Font-Bold="false" />
             </div>
-            <div id="divISeriesIMDBID" class="ContentLine" style="width: 400px;">
+            <div style="clear: both;"></div>
+            <div id="divISeriesIMDBID" class="ContentLine" style="width: 25%;">
                 <asp:Label runat="server" ID="lblSeriesIMDBID_Label" Font-Bold="true" Text="Series IMDBID:" />
                 &nbsp;
                 <asp:LinkButton runat="server" ID="lbSeriesIMDBID" Font-Bold="false" />
             </div>
-            <div style="clear: both;"></div>
-            <div id="divISeriesName" class="ContentLine" style="width: 1400px;">
+            <div id="divISeriesName" class="ContentLine" style="width: 75%;">
                 <asp:Label runat="server" ID="lblSeriesName_Label" Font-Bold="true" Text="Series Name:" />
                 &nbsp;
                 <asp:Label runat="server" ID="lblSeriesName" Font-Bold="false" />
             </div>
             <div style="clear: both;"></div>
-            <div id="divIIMDBURL" class="ContentLine" style="width: 1200px;">
+            <div id="divIIMDBURL" class="ContentLine" style="width: 100%;">
                 <asp:Label runat="server" ID="lblIIMDBURL_Label" Font-Bold="true" Text="IIMDB URL:" />
                 &nbsp;
                 <asp:HyperLink runat="server" ID="linklIMDBURL" />
@@ -95,14 +92,14 @@
         <div id="divSimplePlot" class="FullContentBlock">
             <asp:Label runat="server" ID="lblSimplePlot_Label" Font-Bold="true" Text="Simple Plot:" />
             <br />
-            <asp:Label runat="server" ID="lblSimplePlot" style="width: 1400px;" />
+            <asp:Label runat="server" ID="lblSimplePlot" style="width: 100%;" />
         </div>
         <div style="clear: both;"></div>
         <br />
         <div id="divPlot" class="FullContentBlock">
             <asp:Label runat="server" ID="lblPlot_Label" Font-Bold="true" Text="Plot:" />
             <br />
-            <asp:Label runat="server" ID="lblPlot" style="width: 1400px;" />
+            <asp:Label runat="server" ID="lblPlot" style="width: 100%;" />
         </div>
         <div style="clear: both;"></div>
         <br />
@@ -111,17 +108,17 @@
             <br />
              <asp:GridView ID="gvCast" runat="server" AutoGenerateColumns="false" OnRowCommand="gvCast_RowCommand" Width="100%">
                  <Columns>
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="5%">
                         <ItemTemplate>
                             <asp:LinkButton ID = "lblView" runat = "server" Text = "View" CommandName = "View" CommandArgument = '<% #Eval("PersonID") %>' OnClientClick="aspnetForm.target ='_blank';"></asp:LinkButton >
                         </ItemTemplate>
                     </asp:TemplateField>
-                     <asp:BoundField DataField="ActorIMDBID" HeaderText="IMDB ID" ControlStyle-Width="200px" />
-                     <asp:BoundField DataField="ActorName" HeaderText="Actor Name" ControlStyle-Width="400px" />
-                     <asp:BoundField DataField="CharacterName" HeaderText="Character Name" ControlStyle-Width="400px" />
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                     <asp:BoundField DataField="ActorIMDBID" HeaderText="IMDB ID" ControlStyle-Width="10%" />
+                     <asp:BoundField DataField="ActorName" HeaderText="Actor Name" ControlStyle-Width="30%" />
+                     <asp:BoundField DataField="CharacterName" HeaderText="Character Name" ControlStyle-Width="30%" />
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="25%">
                         <ItemTemplate>
-                            <asp:HyperLink ID = "linkCast_IMDBURL" runat="server" Text="IMDB Page" NavigateUrl='<% #Eval("IMDBCharacterURL") %>' Target="_blank" />
+                            <asp:HyperLink ID = "linkCast_IMDBURL" runat="server" Text="IMDB&nbsp;Page" NavigateUrl='<% #Eval("IMDBCharacterURL") %>' Target="_blank" />
                         </ItemTemplate>
                     </asp:TemplateField>
                  </Columns>
@@ -136,16 +133,16 @@
             <br />
              <asp:GridView ID="gvDirectors" runat="server" AutoGenerateColumns="false" OnRowCommand="gvDirectors_RowCommand" Width="100%">
                  <Columns>
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="5%">
                         <ItemTemplate>
                             <asp:LinkButton ID = "lblView" runat = "server" Text = "View" CommandName = "View" CommandArgument = '<% #Eval("DirectorPersonID") %>' OnClientClick="aspnetForm.target ='_blank';"></asp:LinkButton >
                         </ItemTemplate>
                     </asp:TemplateField>
-                     <asp:BoundField DataField="DirectorIMDBID" HeaderText="IMDB ID" ControlStyle-Width="200px" />
-                     <asp:BoundField DataField="FullName" HeaderText="Name" ControlStyle-Width="600px" />
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                     <asp:BoundField DataField="DirectorIMDBID" HeaderText="IMDB ID" ControlStyle-Width="10%" />
+                     <asp:BoundField DataField="FullName" HeaderText="Name" ControlStyle-Width="60%" />
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="25%">
                         <ItemTemplate>
-                            <asp:HyperLink ID = "linkDirectors_IMDBURL" runat="server" Text="IMDB Page" NavigateUrl='<% #Eval("IMDBURL") %>' Target="_blank" />
+                            <asp:HyperLink ID = "linkDirectors_IMDBURL" runat="server" Text="IMDB&nbsp;Page" NavigateUrl='<% #Eval("IMDBURL") %>' Target="_blank" />
                         </ItemTemplate>
                     </asp:TemplateField>
                  </Columns>
@@ -158,16 +155,16 @@
             <br />
              <asp:GridView ID="gvWriters" runat="server" AutoGenerateColumns="false" OnRowCommand="gvWriters_RowCommand" Width="100%">
                  <Columns>
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="5%">
                         <ItemTemplate>
                             <asp:LinkButton ID = "lblView" runat = "server" Text = "View" CommandName = "View" CommandArgument = '<% #Eval("WriterPersonID") %>' OnClientClick="aspnetForm.target ='_blank';"></asp:LinkButton >
                         </ItemTemplate>
                     </asp:TemplateField>
-                     <asp:BoundField DataField="WriterIMDBID" HeaderText="IMDB ID" ControlStyle-Width="200px" />
-                     <asp:BoundField DataField="FullName" HeaderText="Name" ControlStyle-Width="600px" />
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                     <asp:BoundField DataField="WriterIMDBID" HeaderText="IMDB ID" ControlStyle-Width="10%" />
+                     <asp:BoundField DataField="FullName" HeaderText="Name" ControlStyle-Width="60%" />
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="25%">
                         <ItemTemplate>
-                            <asp:HyperLink ID = "linkWriters_IMDBURL" runat="server" Text="IMDB Page" NavigateUrl='<% #Eval("IMDBURL") %>' Target="_blank" />
+                            <asp:HyperLink ID = "linkWriters_IMDBURL" runat="server" Text="IMDB&nbsp;Page" NavigateUrl='<% #Eval("IMDBURL") %>' Target="_blank" />
                         </ItemTemplate>
                     </asp:TemplateField>
                  </Columns>
@@ -180,15 +177,15 @@
             <br />
              <asp:GridView ID="gvSimpleTVEpisodes" runat="server" AutoGenerateColumns="false" OnRowCommand="gvSimpleTVEpisodes_RowCommand" Width="100%">
                  <Columns>
-                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="200px">
+                    <asp:TemplateField HeaderText = ""  ControlStyle-Width="5%">
                         <ItemTemplate>
                             <asp:LinkButton ID = "lblView" runat = "server" Text = "View" CommandName = "View" CommandArgument = '<% #Eval("EpisodeMovieID") %>' OnClientClick="aspnetForm.target ='_blank';"></asp:LinkButton >
                         </ItemTemplate>
                     </asp:TemplateField>
-                     <asp:BoundField DataField="EpisodeTitle" HeaderText="Episode Title" ControlStyle-Width="700px" />
-                     <asp:BoundField DataField="Season" HeaderText="Season" ControlStyle-Width="100px" />
-                     <asp:BoundField DataField="Episode" HeaderText="Episode" ControlStyle-Width="100px" />
-                     <asp:BoundField DataField="AirDate" HeaderText="Air Date" ControlStyle-Width="300px" />
+                     <asp:BoundField DataField="EpisodeTitle" HeaderText="Episode Title" ControlStyle-Width="45%" />
+                     <asp:BoundField DataField="Season" HeaderText="Season" ControlStyle-Width="10%" />
+                     <asp:BoundField DataField="Episode" HeaderText="Episode" ControlStyle-Width="10%" />
+                     <asp:BoundField DataField="AirDate" HeaderText="Air Date" ControlStyle-Width="30%" />
                  </Columns>
              </asp:GridView>
         </div>
@@ -199,7 +196,7 @@
             <br />
              <asp:GridView ID="gvGenres" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="GenreName" HeaderText="Genre" ControlStyle-Width="1400px" />
+                     <asp:BoundField DataField="GenreName" HeaderText="Genre" ControlStyle-Width="100%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -210,7 +207,7 @@
             <br />
              <asp:GridView ID="gvMovieTrivia" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="Trivia" HeaderText="Trivia" ControlStyle-Width="1400px" />
+                     <asp:BoundField DataField="Trivia" HeaderText="Trivia" ControlStyle-Width="100%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -221,8 +218,8 @@
             <br />
              <asp:GridView ID="gvGoofs" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="Type" HeaderText="Goof Type" ControlStyle-Width="400px" />
-                     <asp:BoundField DataField="GoofText" HeaderText="Text" ControlStyle-Width="1000px" />
+                     <asp:BoundField DataField="Type" HeaderText="Goof Type" ControlStyle-Width="25%" />
+                     <asp:BoundField DataField="GoofText" HeaderText="Text" ControlStyle-Width="75%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -240,7 +237,7 @@
             <br />
              <asp:GridView ID="gvCountries" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="CountryName" HeaderText="Country" ControlStyle-Width="1400px" />
+                     <asp:BoundField DataField="CountryName" HeaderText="Country" ControlStyle-Width="100%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -251,8 +248,8 @@
             <br />
              <asp:GridView ID="gvFilmingLocations" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="Location" HeaderText="Location" ControlStyle-Width="600px" />
-                     <asp:BoundField DataField="Remarks" HeaderText="Remarks" ControlStyle-Width="800px" />
+                     <asp:BoundField DataField="Location" HeaderText="Location" ControlStyle-Width="40%" />
+                     <asp:BoundField DataField="Remarks" HeaderText="Remarks" ControlStyle-Width="60%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -263,7 +260,7 @@
             <br />
              <asp:GridView ID="gvLanguages" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="LanguageName" HeaderText="Language" ControlStyle-Width="1400px" />
+                     <asp:BoundField DataField="LanguageName" HeaderText="Language" ControlStyle-Width="100%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -274,9 +271,9 @@
             <br />
              <asp:GridView ID="gvAKAs" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="Country" HeaderText="Country" ControlStyle-Width="300px" />
-                     <asp:BoundField DataField="Title" HeaderText="Title" ControlStyle-Width="500px" />
-                     <asp:BoundField DataField="Comment" HeaderText="Comment" ControlStyle-Width="600px" />
+                     <asp:BoundField DataField="Country" HeaderText="Country" ControlStyle-Width="20%" />
+                     <asp:BoundField DataField="Title" HeaderText="Title" ControlStyle-Width="60%" />
+                     <asp:BoundField DataField="Comment" HeaderText="Comment" ControlStyle-Width="20%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -287,8 +284,8 @@
             <br />
              <asp:GridView ID="gvSimilarMovies" runat="server" AutoGenerateColumns="false" Width="100%">
                  <Columns>
-                     <asp:BoundField DataField="IMDBID" HeaderText="IMDBID" ControlStyle-Width="200px" />
-                     <asp:BoundField DataField="MovieName" HeaderText="Title" ControlStyle-Width="1200px" />
+                     <asp:BoundField DataField="IMDBID" HeaderText="IMDBID" ControlStyle-Width="10%" />
+                     <asp:BoundField DataField="MovieName" HeaderText="Title" ControlStyle-Width="90%" />
                 </Columns>
              </asp:GridView>
         </div>
@@ -384,9 +381,9 @@
         <div id="divKeywords" class="FullContentBlock">
             <asp:Label runat="server" ID="lblKeywords_Label" Font-Bold="true" Text="Keywords:" />
             <br />
-            <asp:Label runat="server" ID="lblKeywords" Font-Bold="false" Width="1400px" />
+            <asp:Label runat="server" ID="lblKeywords" Font-Bold="false" Width="100%" />
         </div>
     </div>
     <br /><br /><br /><br />
-    <asp:Label runat="server" ID="lblPlaceholder" Font-Bold="false" Width="1400px" Text="" />
+    <asp:Label runat="server" ID="lblPlaceholder" Font-Bold="false" Width="100%" Text="" />
 </asp:Content>

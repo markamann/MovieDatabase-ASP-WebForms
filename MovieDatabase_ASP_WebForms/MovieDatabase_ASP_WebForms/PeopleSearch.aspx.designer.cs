@@ -40,15 +40,6 @@ namespace MovieDatabase_ASP_WebForms {
         protected global::System.Web.UI.WebControls.LinkButton lbFullName;
         
         /// <summary>
-        /// lbActorActress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbActorActress;
-        
-        /// <summary>
         /// lbSex control.
         /// </summary>
         /// <remarks>
@@ -67,193 +58,76 @@ namespace MovieDatabase_ASP_WebForms {
         protected global::System.Web.UI.WebControls.LinkButton lbIMDBID;
         
         /// <summary>
-        /// pnlType control.
+        /// pnlFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlType;
+        protected global::System.Web.UI.WebControls.Panel pnlFullName;
         
         /// <summary>
-        /// lblSearchBy_Type control.
+        /// lblSearchBy_FullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Type;
+        protected global::System.Web.UI.WebControls.Label lblSearchBy_FullName;
         
         /// <summary>
-        /// ddlType control.
+        /// ddlFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlType;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFullName;
         
         /// <summary>
-        /// btnSearchByType control.
+        /// btnSearchByFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByType;
+        protected global::System.Web.UI.WebControls.Button btnSearchByFullName;
         
         /// <summary>
-        /// pnlTitle control.
+        /// pnlSex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlTitle;
+        protected global::System.Web.UI.WebControls.Panel pnlSex;
         
         /// <summary>
-        /// chkTitle_IncludeTVEpisodes control.
+        /// lblSearchBy_Sex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkTitle_IncludeTVEpisodes;
+        protected global::System.Web.UI.WebControls.Label lblSearchBy_Sex;
         
         /// <summary>
-        /// lblSearchBy_Title control.
+        /// ddlSex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Title;
+        protected global::System.Web.UI.WebControls.DropDownList ddlSex;
         
         /// <summary>
-        /// ddlTitle control.
+        /// btnSearchBySex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTitle;
-        
-        /// <summary>
-        /// btnSearchByTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByTitle;
-        
-        /// <summary>
-        /// pnlGenre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlGenre;
-        
-        /// <summary>
-        /// lblSearchBy_Genre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Genre;
-        
-        /// <summary>
-        /// ddlGenre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGenre;
-        
-        /// <summary>
-        /// btnSearchByGenre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByGenre;
-        
-        /// <summary>
-        /// pnlKeyword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlKeyword;
-        
-        /// <summary>
-        /// lblSearchBy_Keyword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearchBy_Keyword;
-        
-        /// <summary>
-        /// ddlKeyword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlKeyword;
-        
-        /// <summary>
-        /// btnSearchByKeyword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByKeyword;
-        
-        /// <summary>
-        /// pnlPerson control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlPerson;
-        
-        /// <summary>
-        /// lblPeerson_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPeerson_Label;
-        
-        /// <summary>
-        /// ddlPeople control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPeople;
-        
-        /// <summary>
-        /// btnSearchByPerson control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchByPerson;
+        protected global::System.Web.UI.WebControls.Button btnSearchBySex;
         
         /// <summary>
         /// pnlIMDBID control.

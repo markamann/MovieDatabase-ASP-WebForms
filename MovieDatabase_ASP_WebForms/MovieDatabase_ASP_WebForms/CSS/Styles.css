@@ -27,54 +27,40 @@ header {
     text-align: center;
 }
 
-.BaseBlock {
-    float:left;
-    width: 1405px;
-    text-align: center;
-    vertical-align: top;
+.MarginContainer {
+    width: 100%;
+    padding: 10px;
 }
 
 .PhotoAndNameBlock {
     float: left;
-    width: 1400px;
+    width: 90%;
     text-align: center;
-    vertical-align: top;
 }
 
 .MoviePosterAndTitleBlock {
     float: left;
-    width: 1400px;
+    width: 90%;
     text-align: center;
-    vertical-align: top;
-}
-
-.Photo {
-    float:left;
-    width: 350px;
-    height: 200px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .PersonPhoto {
     float: left;
-    width: 500px;
+    width: 40%;
     height: 200px;
     text-align: center;
-    vertical-align: middle;
 }
 
 .MoviePoster {
     float: left;
-    width: 500px;
+    width: 40%;
     height: 200px;
     text-align: center;
-    vertical-align: middle;
 }
 
 .FullNameBlock {
     float: left;
-    width: 900px;
+    width: 60%;
     height: 200px;
     text-align: center;
     line-height: 200px;
@@ -82,158 +68,29 @@ header {
 
 TitleBlock {
     float: left;
-    width: 900px;
+    width: 60%;
     height: 200px;
     text-align: center;
     line-height: 200px;
-}
-
-.BaseDataBlock {
-    float:left;
-    width: 1200px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.MovieBaseDataBlock {
-    float: left;
-    width: 1400px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.PersonBaseDataBlock {
-    float: left;
-    width: 1400px;
-    text-align: left;
-    vertical-align: top;
 }
 
 .ContentLine {
     float:left;
     height: 30px;
     text-align: left;
-    vertical-align: middle;
-}
-
-.CenteredContentLine {
-    float: left;
-    height: 30px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .FullContentBlock {
-    float:left;
-    width: 1400px;
+    float: left;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: left;
-    vertical-align: top;
 }
 
 .HalfContentLine {
-    float:left;
-    width: 700px;
+    float: left;
+    width: 45%;
     height: 30px;
     text-align: left;
-    vertical-align: middle;
 }
-
-/*
-        <div id="divBusinessData" class="FullContentBlock">
-            <asp:Label runat="server" ID="lblBusinessData_Label" Font-Bold="true" Text="Business Data:" />
-            <br />
-            <div id="divBudget" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblBudget_Label" Font-Bold="true" Text="Budget:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblBudget" Font-Bold="false" />
-            </div>
-            <div id="divOpeningWeekend" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblOpeningWeekend_Label" Font-Bold="true" Text="Opening Weekend:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblOpeningWeekend" Font-Bold="false" />
-            </div>
-            <div style="clear: both;"></div>
-            <div id="divGrossUSA" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblGrossUSA_Label" Font-Bold="true" Text="Gross USA:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblGrossUSA" Font-Bold="false" />
-            </div>
-            <div id="divWorldwide" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblWorldwide_Label" Font-Bold="true" Text="Worldwide:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblWorldwide" Font-Bold="false" />
-            </div>
-        </div>
-        <div style="clear: both;"></div>
-        <br />
-        <div id="divTechnicalData" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
-            <asp:Label runat="server" ID="lblTechnicalData_Label" Font-Bold="true" Text="Technical Data:" />
-            <br />
-            <div id="divRuntime" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblTechnicalData_Runtime_Label" Font-Bold="true" Text="Runtime:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblTechnicalData_Runtime" Font-Bold="false" />
-            </div>
-            <div id="divSoundMix" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblSoundMix_Label" Font-Bold="true" Text="Sound Mix:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblSoundMix" Font-Bold="false" />
-            </div>
-            <div style="clear: both;"></div>
-            <div id="divColor" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblColor_Label" Font-Bold="true" Text="Color:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblColor" Font-Bold="false" />
-            </div>
-            <div id="divAspectRatio" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblAspectRatio_Label" Font-Bold="true" Text="Aspect Ratio:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblAspectRatio" Font-Bold="false" />
-            </div>
-            <div style="clear: both;"></div>
-            <div id="divCamera" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblCamera_Label" Font-Bold="true" Text="Camera:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblCamera" Font-Bold="false" />
-            </div>
-            <div id="divLaboratory" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblLaboratory_Label" Font-Bold="true" Text="Laboratory:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblLaboratory" Font-Bold="false" />
-            </div>
-            <div style="clear: both;"></div>
-            <div id="divFilmLength" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblFilmLength_Label" Font-Bold="true" Text="Film Length:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblFilmLength" Font-Bold="false" />
-            </div>
-            <div id="divNegativeFormat" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblNegativeFormat_Label" Font-Bold="true" Text="Negative Format:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblNegativeFormat" Font-Bold="false" />
-            </div>
-            <div style="clear: both;"></div>
-            <div id="divCinematographicProcess" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblCinematographicProcess_Label" Font-Bold="true" Text="Cinematographic Process:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblCinematographicProcess" Font-Bold="false" />
-            </div>
-            <div id="divPrintedFilmFormat" style="float:left; width: 700px; height: 30px; text-align: left; vertical-align: middle;">
-                <asp:Label runat="server" ID="lblPrintedFilmFormat_Label" Font-Bold="true" Text="Printed Film Format:" />
-                &nbsp;
-                <asp:Label runat="server" ID="lblPrintedFilmFormat" Font-Bold="false" />
-            </div>
-        </div>
-        <div style="clear: both;"></div>
-        <br />
-        <div id="divKeywords" style="float:left; width: 1400px; text-align: left; vertical-align: top;">
-            <asp:Label runat="server" ID="lblKeywords_Label" Font-Bold="true" Text="Keywords:" />
-            <br />
-            <asp:Label runat="server" ID="lblKeywords" Font-Bold="false" Width="1400px" />
-        </div>
-    </div>
-    <br /><br /><br /><br />
-    <asp:Label runat="server" ID="lblPlaceholder" Font-Bold="false" Width="1400px" Text="" />
-*/
-
-
