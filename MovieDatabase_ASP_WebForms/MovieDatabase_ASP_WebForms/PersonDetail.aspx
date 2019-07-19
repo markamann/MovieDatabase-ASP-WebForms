@@ -151,6 +151,25 @@
                  </Columns>
              </asp:GridView>
         </div>
+        <div style="clear: both;"></div>
+        <br />
+        <div id="divFilmography" class="FullContentBlock">
+            <asp:Label runat="server" ID="lblFilmography_Label" Font-Bold="true" Text="Filmography:" />
+            <br />
+             <asp:GridView ID="gvFilmography" runat="server" AutoGenerateColumns="false" Width="100%" OnRowCommand="gvFilmography_RowCommand">
+                 <Columns>
+                        <asp:TemplateField HeaderText = ""  ControlStyle-Width="15%">
+                        <ItemTemplate>
+                                <asp:LinkButton ID = "lblView" runat = "server" Text = "View" CommandName = "View" CommandArgument = '<% #Eval("MovieID") %>' OnClientClick="aspnetForm.target ='_blank';" Visible='<%# IsMovieInDatabase((String)Eval("IMDBID")) %>' />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                     <asp:BoundField DataField="IMDBID" HeaderText="IMDB ID" ControlStyle-Width="20%" />
+                     <asp:BoundField DataField="Title" HeaderText="Title" ControlStyle-Width="25%" />
+                     <asp:BoundField DataField="Year" HeaderText="Year" ControlStyle-Width="20%" />
+                     <asp:BoundField DataField="Remarks" HeaderText="Remarks" ControlStyle-Width="20%" />
+                 </Columns>
+             </asp:GridView>
+        </div>
     </div>
     <br /><br /><br /><br />
     <asp:Label runat="server" ID="lblPlaceholder" Font-Bold="false" Width="1400px" Text="" />

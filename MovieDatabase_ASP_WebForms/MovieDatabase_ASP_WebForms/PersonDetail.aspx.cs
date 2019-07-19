@@ -106,6 +106,64 @@ namespace MovieDatabase_ASP_WebForms
                     gvQuotes.DataBind();
                 }
 
+                // Filmography
+                SQL = "SELECT PersonID, MovieID, IMDBID, Title, [Year], [Remarks], Ordinal FROM Filmographies WHERE PersonID = " + PersonID + " ORDER BY [Year]";
+                using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+                {
+                    using (SqlCommand cmd = new SqlCommand(SQL, con))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            _Table = new DataTable();
+                            adapter.Fill(_Table);
+                        }
+                    }
+                }
+
+                if (_Table != null)
+                {
+                    gvFilmography.DataSource = _Table;
+                    gvFilmography.DataBind();
+                }
+
+            }
+        }
+
+        protected void gvFilmography_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "View")
+            {
+                String MovieID = e.CommandArgument.ToString();
+
+                this.Session["MovieID"] = MovieID;
+                this.Session["ReferringPage"] = "PersonDetail.aspx";
+
+                Response.Redirect("MovieDetail.aspx");
+            }
+        }
+
+        protected Boolean IsMovieInDatabase(String imdbid)
+        {
+            SQL = "SELECT MovieID, Title FROM Movies WHERE IMDBID = '" + imdbid + "'";
+            using (SqlConnection con = new SqlConnection(Connections.ConnectionStrings.MovieDatabaseConnectionString_Private))
+            {
+                using (SqlCommand cmd = new SqlCommand(SQL, con))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        _Table = new DataTable();
+                        adapter.Fill(_Table);
+                    }
+                }
+            }
+
+            if (_Table == null)
+            {
+                return false;
+            }
+            else
+            {
+                return (_Table.Rows.Count > 0);
             }
         }
 
